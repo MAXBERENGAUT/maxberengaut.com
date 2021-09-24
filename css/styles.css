@@ -1,0 +1,49 @@
+body, html {
+    background: black;
+    overflow-x: hidden;
+    font-family: Helvetica;
+    color: white;
+}
+
+#menu {
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    height: 20%;
+    top: 40%; /* 50% - height/2 */
+}
+
+#arrow {
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    height: 4%;
+    width: 5%;
+    top: 60%;
+    right: 0;
+    transform: translate(-50%, -75%);
+}
+
+.item {
+    position: relative;
+    display: flex;
+    padding: 0% 2%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+}
+
+footer {
+    position: fixed;
+    display: block;
+    text-align: center;
+    font-size: 1vw;
+    letter-spacing: 0.03em;
+    word-spacing: 0.5em;
+    left: 50%;
+    bottom: 0;
+    margin: 0 auto;
+    transform: translate(-50%, 0);
+}
