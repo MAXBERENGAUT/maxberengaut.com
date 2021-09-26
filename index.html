@@ -12,8 +12,14 @@
     <title>Max Berengaut</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-    <script defer src="js/index.js"></script>
+    
+    <!-- FULL RELEASE -->
+    <!-- <link rel="stylesheet" href="css/index.css" type="text/css"> -->
+    <!-- <script defer src="js/index.js"></script> -->
+
+    <!-- DEVELOPMENT AUTO-RELOAD -->
+    <script>document.write('<link rel="stylesheet" href="css/index.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
+    <script>document.write('<script defer src="js/index.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
 
 </head>
 <body>
