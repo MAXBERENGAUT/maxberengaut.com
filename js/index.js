@@ -2,7 +2,7 @@
 INFINITE_MENU_JS = document.currentScript;
 
 const updates_per_second = 60;
-const menu_speed_max = 20;
+const menu_speed_max = 4;
 const menu_resistance = 10;
 
 var menu = document.getElementById("menu");
@@ -17,27 +17,36 @@ var update_interval;
 
 updateMenu();
 
+// update menu position/speed
 function updateMenu(){
+  // if the screen is wider than the menu, double the menu
+  if (menu.clientWidth + menu_offset < document.documentElement.clientWidth){
+    let duplicates = [];
+    for (item of items){ duplicates.push(item.cloneNode(true)); }
+    for (duplicate of duplicates){ menu.appendChild(duplicate); }
+  }
+
   // if we have moved the menu left s.t. the first element is off-screen
   if (-menu_offset > items.item(0).clientWidth){
     menu_offset += items.item(0).clientWidth;
     menu.appendChild(items.item(0));
   }
   
-  // if we have moved the menu right s.t. the last element is off-screen
-  else if (menu_offset > 0) {
-    menu_offset -= items.item(items.length - 1).clientWidth;
-    menu.insertBefore(items.item(items.length - 1), menu.firstChild);
-  }
+  // // if we have moved the menu right s.t. the last element is off-screen
+  // else if (menu_offset > 0) {
+  //   menu_offset -= items.item(items.length - 1).clientWidth;
+  //   menu.insertBefore(items.item(items.length - 1), menu.firstChild);
+  // }
 
   // adjust speed if mouse hovering
   if (menu_hovered_over){
     let mouse_pos = (2 * mouse_X) / (document.documentElement.clientWidth) - 1;
-    let speed = smooth(mouse_pos) * menu_speed_max;
-    menu_speed = ((menu_resistance - 1) / menu_resistance) * menu_speed + (1 / menu_resistance) * speed;
+    if (mouse_pos < 0) mouse_pos = 0;   // adjustment for only moving menu right
+    menu_speed = ((menu_resistance - 1) / menu_resistance) * menu_speed + (1 / menu_resistance) * menu_speed_max * mouse_pos;
+  }
 
   // lower speed if mouse not hovering
-  } else {
+  else {
     menu_speed *= (menu_resistance - 1) / menu_resistance;
     if (Math.abs(menu_speed) < 0.01) {
       menu_speed = 0;
@@ -50,10 +59,7 @@ function updateMenu(){
   menu.style.transform = "translateX(" + menu_offset + "px)";
 }
 
-function smooth(x) {
-  return (2 / (1 + Math.exp(-x))) - 1;
-}
-
+// set animation in all browsers
 function setAnimation(node, animationText){
   node.style["-webkit-animation"] = animationText;
   node.style["-moz-animation"] = animationText;
@@ -62,13 +68,13 @@ function setAnimation(node, animationText){
   node.style["animation"] = animationText;
 }
 
+// on mouse move, record mouse x position
 document.addEventListener('mousemove', e => {
   mouse_X = e.clientX;
 });
 
+// on mouse enter menu, start/continue updateMenu
 menu.addEventListener('mouseenter', () => {
-  console.log("mouseentered");
-
   menu_hovered_over = true;
 
   if (menu_speed == 0){
@@ -76,15 +82,16 @@ menu.addEventListener('mouseenter', () => {
   }
 });
 
+// on mouse leave menu, update menu_hovered_over
 menu.addEventListener('mouseleave', () => {
   menu_hovered_over = false;
 });
 
+// for each item on click, transition and redirect
 for (let item of items){
   item.addEventListener("click", e => {
     // stop rotation
     clearInterval(update_interval);
-    console.log("click!");
 
     let zoom = e.target.cloneNode(true);
     let rect = e.target.getBoundingClientRect();
@@ -96,13 +103,13 @@ for (let item of items){
     zoom.style.position = "fixed";
     zoom.style.whiteSpace = "nowrap";
     zoom.style.left = (rect.left + rect.width / 2) + "px";
-    zoom.style.top = "50%";
+    zoom.style.top = "40%";
     zoom.style.transform = "translate(-50%, -50%)";
-    setAnimation(zoom, "zoom 2s forwards");
+    setAnimation(zoom, "zoom 3.5s forwards");
     
     // hide items, fade background
-    for (let x of items){ setAnimation(x, "fade-out 0.5s forwards"); }
-    setAnimation(document.documentElement, "white-out 1.5s forwards");
+    for (let x of items){ setAnimation(x, "fade-out 2s forwards"); }
+    setAnimation(document.documentElement, "white-out 3s forwards");
     
     // redirect post-animation
     zoom.addEventListener("animationend", () => {
@@ -112,3 +119,15 @@ for (let item of items){
     document.body.appendChild(zoom);
   });
 }
+
+// capitalization experiment
+document.addEventListener("keydown", e => {
+  if (e.key == "Shift"){
+    console.log("shift");
+    if(document.documentElement.style.textTransform == "" || document.documentElement.style.textTransform == "none" ) {
+      document.documentElement.style.textTransform = "lowercase";
+    } else {
+      document.documentElement.style.textTransform = "none";
+    }
+  }
+})

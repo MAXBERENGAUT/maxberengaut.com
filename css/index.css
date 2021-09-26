@@ -9,7 +9,7 @@ footer {
     position: fixed;
     display: block;
     text-align: center;
-    font-size: 1vw;
+    font-size: 0.85em;
     letter-spacing: 0.03em;
     word-spacing: 0.5em;
     left: 50%;
@@ -24,7 +24,7 @@ footer {
     flex-wrap: nowrap;
     position: fixed;
     height: 20%;
-    top: 40%; /* 50% - height/2 */
+    top: 30%; /* 40% - height/2 */
 }
 
 .fade-in {
@@ -53,15 +53,15 @@ footer {
     padding: 0% 2%;
     align-items: center;
     justify-content: center;
-    font-size: 2.5vw;
+    font-size: 1.7em;
     cursor: pointer;
 }
 
-@-webkit-keyframes  zoom { to { font-size: 50000%; }}
-@-moz-keyframes     zoom { to { font-size: 50000%; }}
-@-o-keyframes       zoom { to { font-size: 50000%; }}
-@-ms-keyframes      zoom { to { font-size: 50000%; }}
-@keyframes          zoom { to { font-size: 50000%; }}
+@-webkit-keyframes  zoom { to { font-size: 25000%; }}
+@-moz-keyframes     zoom { to { font-size: 25000%; }}
+@-o-keyframes       zoom { to { font-size: 25000%; }}
+@-ms-keyframes      zoom { to { font-size: 25000%; }}
+@keyframes          zoom { to { font-size: 25000%; }}
 
 @-webkit-keyframes  white-out { to { background: white; }}
 @-moz-keyframes     white-out { to { background: white; }}
