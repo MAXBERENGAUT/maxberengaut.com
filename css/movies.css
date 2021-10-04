@@ -2,57 +2,25 @@ body, html {
     background-color: white;
     color: black;
     font-family: 'Raleway', Verdana;
-    word-spacing: 0.5em;
+    word-spacing: 0.25em;
     line-height: 1.5em;
 }
 
 h1 {
     text-align: center;
+    font-size: 300%;
 }
 
-.info-block {
-    margin-left: 20%;
-}
-
-.indent {
-    margin-left: 5%;
-}
-
-.movie {
-    height: 100vh;
-}
-
-.column {
-    float: left;
-}
-
-.video-column {
-    width: 50%;
-    margin-left: 12.5%;
-}
-
-.synopsis-column {
-    width: 20%;
-    margin-left: 5%;
-    margin-right: 12.5%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-bottom: 2.5vh;
-}
-
-.responsive-iframe {
-    width: 60vw;
-    height: 50vh;
+.content-area {
+    padding: 0 20vw;
+    display: inline-block;
 }
 
 .video-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
+    margin-bottom: 2%;
 }
 
 .video {
@@ -62,4 +30,13 @@ h1 {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spacer {
+    height: 20vh;
 }
