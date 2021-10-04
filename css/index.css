@@ -1,8 +1,13 @@
+* {
+    font-family: 'Raleway', Verdana;
+    color: white;
+    word-spacing: 0.25em;
+    line-height: 1.5em;
+}
+
 body, html {
     overflow-x: hidden;
     background-color: black;
-    color: white;
-    font-family: 'Raleway', Verdana;
 }
 
 footer {

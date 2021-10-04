@@ -1,9 +1,14 @@
-body, html {
-    background-color: white;
-    color: black;
+* {
     font-family: 'Raleway', Verdana;
     word-spacing: 0.25em;
     line-height: 1.5em;
+    color: black;
+}
+
+body {
+    background-color: white;
+    padding: 0 10vw;
+    display: block;
 }
 
 h1 {
@@ -11,19 +16,14 @@ h1 {
     font-size: 300%;
 }
 
-.content-area {
-    padding: 0 20vw;
-    display: inline-block;
-}
-
-.video-container {
+.featured {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     margin-bottom: 2%;
 }
 
-.video {
+.featured > * {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,5 +38,35 @@ h1 {
 }
 
 .spacer {
-    height: 20vh;
+    height: 15vh;
+}
+
+form {
+    display: flex;
+}
+
+form > .email {
+    width: 20%;
+}
+
+form > .text {
+    width: 60%;
+    margin-left: 1%;
+}
+
+form > button {
+    margin-left: 2%;
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+form > button:hover {
+    border-width: 2px;
+    font-weight: bold;
+}
+
+form > button:focus {
+    background-color: #f0f0f0;
 }
