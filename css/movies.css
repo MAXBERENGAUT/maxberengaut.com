@@ -7,13 +7,19 @@
 
 body {
     background-color: white;
-    padding: 0 10vw;
+    padding: 0 20vw;
     display: block;
 }
 
 h1 {
     text-align: center;
     font-size: 300%;
+    margin-bottom: 0;
+    line-height: 0.75em;
+}
+
+.summary {
+    margin: 2em 0;
 }
 
 .featured {
@@ -45,13 +51,12 @@ form {
     display: flex;
 }
 
-form > .email {
-    width: 20%;
+.email, .text {
+    width: 80%;
 }
 
-form > .text {
-    width: 60%;
-    margin-left: 1%;
+.text, .submit {
+    display: none;
 }
 
 form > button {
@@ -62,11 +67,11 @@ form > button {
     border-width: 2px;
 }
 
-form > button:hover {
+form > button:hover, form > span:hover {
     border-width: 2px;
     font-weight: bold;
 }
 
-form > button:focus {
+form > button:focus, form > span:focus {
     background-color: #f0f0f0;
 }

@@ -16,16 +16,16 @@
     
     <!-- FULL RELEASE -->
     <!-- <link rel="stylesheet" href="css/index.css" type="text/css"> -->
-    <!-- <script defer src="js/index.js"></script> -->
+    <!-- <script defer src="js/test.js"></script> -->
 
     <!-- DEVELOPMENT AUTO-RELOAD -->
     <script>document.write('<link rel="stylesheet" href="css/movies.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
-    <!-- <script>document.write('<script defer src="js/movies.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script> -->
+    <script>document.write('<script defer src="js/movies.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
 
 </head>
 <body>
     <h1>Three Crows in Charlottesville</h1>
-    <p>
+    <p class='summary'>
         Frankie (Jacob Mingle) has to solve three murders of government officials across a rugged desolate 
         Charlottesville landscape.  The clues point to a past he wants to forget, as he is stuck in the 
         aftermath of an oppressive pandemic which has left its survivors (Ray Ruhlman, Anna Balch, Max Berengaut) 
@@ -54,7 +54,7 @@
 
 
     <h1>Farmland</h1>
-    <p>
+    <p class='summary'>
         Five teens stranded in a farmhouse are forced to decide if the arrival of 'Church Men' in the area is 
         enough to make them leave. 
     </p>
@@ -65,14 +65,15 @@
     <div><br/>Reach out for the script or for help in the production:</div>
     <form method="POST" target="">
         <input class="email" type="email" name="email" placeholder="Your email" required>
-        <input class="text" type="text" name="message" placeholder="Your message" required>
-        <button>Submit</button>
+        <input class="text" type="text" name="message" placeholder="Your message" value=" " required>
+        <button type="button" onclick="onFormNext(this);">Next</button>
+        <button class="submit">Submit</button>
     </form>
     <div class="spacer"></div>
 
 
     <h1>Monticello Avenue</h1>
-    <p>
+    <p class='summary'>
         Two friends just out of High School wander aimlessly through the graduation parties of Charlottesville, 
         as their friends and family intersect and come in to play with one another.
     </p>
@@ -82,8 +83,9 @@
     <div><br/>Reach out for the script or for help in the production:</div>
     <form method="POST" target="">
         <input class="email" type="email" name="email" placeholder="Your email" required>
-        <input class="text" type="text" name="message" placeholder="Your message" required>
-        <button>Submit</button>
+        <input class="text" type="text" name="message" placeholder="Your message" value=" " required>
+        <button type="button" onclick="onFormNext(this);">Next</button>
+        <button class="submit">Submit</button>
     </form>
 </body>
 </html>

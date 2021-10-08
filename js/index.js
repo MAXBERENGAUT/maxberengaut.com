@@ -1,4 +1,3 @@
-//FIXME: text flashes on reload sometimes - text does not center when this JS is not included
 INFINITE_MENU_JS = document.currentScript;
 
 const updates_per_second = 60;
@@ -10,29 +9,34 @@ var items = document.getElementsByClassName("item");
 
 var mouse_X = document.documentElement.clientWidth / 2;
 var menu_hovered_over = false; 
-var menu_offset = 0;
+var menu_offset = document.documentElement.clientWidth / 3;
 var menu_speed = 0;
 
 var update_interval;
 
-updateMenu();
+initMenu();
+
+function initMenu(){
+  doubleMenuItems();
+  updateMenu();
+}
 
 // update menu position/speed
 function updateMenu(){
   // if the screen is wider than the menu, double the menu
   if (menu.clientWidth + menu_offset < document.documentElement.clientWidth){
-    let duplicates = [];
-    for (item of items){ duplicates.push(item.cloneNode(true)); }
-    for (duplicate of duplicates){ menu.appendChild(duplicate); }
+    doubleMenuItems();
   }
 
   // if we have moved the menu left s.t. the first element is off-screen
-  if (-menu_offset > items.item(0).clientWidth){
+  // and if there is no initial gap
+  if (-menu_offset > items.item(0).clientWidth && menu_offset < 0){
     menu_offset += items.item(0).clientWidth;
     menu.appendChild(items.item(0));
   }
   
   // // if we have moved the menu right s.t. the last element is off-screen
+  // // NOTE: this was broken by initial gap
   // else if (menu_offset > 0) {
   //   menu_offset -= items.item(items.length - 1).clientWidth;
   //   menu.insertBefore(items.item(items.length - 1), menu.firstChild);
@@ -57,6 +61,12 @@ function updateMenu(){
   // update menu position
   menu_offset -= menu_speed;
   menu.style.transform = "translateX(" + menu_offset + "px)";
+}
+
+function doubleMenuItems(){
+  let duplicates = [];
+  for (item of items){ duplicates.push(item.cloneNode(true)); }
+  for (duplicate of duplicates){ menu.appendChild(duplicate); }
 }
 
 // set animation in all browsers
@@ -119,15 +129,3 @@ for (let item of items){
     document.body.appendChild(zoom);
   });
 }
-
-// capitalization experiment
-document.addEventListener("keydown", e => {
-  if (e.key == "Shift"){
-    console.log("shift");
-    if(document.documentElement.style.textTransform == "" || document.documentElement.style.textTransform == "none" ) {
-      document.documentElement.style.textTransform = "lowercase";
-    } else {
-      document.documentElement.style.textTransform = "none";
-    }
-  }
-})
