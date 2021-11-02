@@ -235,12 +235,12 @@ var locations = [
     "Valencia, ES",
     "Valencia, ES",
     "Valencia, ES",
-    "Valencia, ES",
-    "Valencia, ES",
-    "Valencia, ES",
-    "Valencia, ES",
-    "Valencia, ES",
-    "Valencia, ES",
+    "Charlottesville, VA"",
+    "Charlottesville, VA"",
+    "Charlottesville, VA"",
+    "Charlottesville, VA"",
+    "Charlottesville, VA"",
+    "Charlottesville, VA"",
 ]
 
 swapImage();
