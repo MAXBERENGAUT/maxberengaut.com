@@ -209,7 +209,7 @@ var locations = [
     "Washington D.C.",
     "Washington D.C.",
     "Washington D.C.",
-    "Washington D.C.",
+    "Valencia, ES",
     "Valencia, ES",
     "Valencia, ES",
     "Valencia, ES",
