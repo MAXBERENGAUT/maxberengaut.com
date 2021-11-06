@@ -7,7 +7,8 @@
 
 body {
     background-color: white;
-    padding: 0 20vw;
+    /* padding: 0 35vh; */
+    padding: 0 17.5vw;
     display: block;
 }
 
@@ -17,6 +18,17 @@ h1 {
     margin-bottom: 0;
     line-height: 0.75em;
     text-align: center;
+}
+
+footer {
+    position: fixed;
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+    word-spacing: 0.5em;
+    right: 8.75vw;
+    bottom: 0;
+    margin: 0 auto;
+    transform: translate(-50%, 0);
 }
 
 span:hover {
@@ -54,6 +66,7 @@ span:hover {
     line-height: 1.5em;
     margin: 0.25em 0;
 }
+
 
 .fade-in {
     -webkit-animation: fade-in 2s forwards;
