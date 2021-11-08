@@ -167,7 +167,7 @@ var locations = [
     "Washington D.C.",
     "Washington D.C.",
     "Washington D.C.",
-    "Charlottesville, VA",
+    "Washington D.C.",
     "Charlottesville, VA",
     "Charlottesville, VA",
     "Charlottesville, VA",
