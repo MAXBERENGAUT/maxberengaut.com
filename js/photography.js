@@ -256,4 +256,4 @@ var locations = [
     "Charlottesville, VA",
 ]
 
-// swapImage();
+swapImage();
