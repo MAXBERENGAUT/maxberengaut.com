@@ -1,15 +1,28 @@
 var img = document.getElementById("img");
 var loc = document.getElementById("location");
+var robot = document.getElementById("robot");
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
 function swapImage(){
+    // update robot
+    robot.src = "./res/robot_clicked.png";
+
+    // change image
     let index = getRandomInt(images.length)
     img.src = "https://lightroom.adobe.com/v2c/spaces/42df3b4ced584d1ea7b99d0035413610/assets/" + images[index];
     loc.textContent = locations[index];
 }
+
+robot.addEventListener("mouseover", e => {
+    robot.src = "./res/robot_hover.png";
+});
+
+robot.addEventListener("mouseleave", e => {
+    robot.src = "./res/robot_neutral.png";
+});
 
 var images = [
     "102d04a816364e52a2da4b416a37e06c/revisions/0a61ed1ab9504901888e87c3a2e3e340/renditions/4936eb38a275aa42c181685ebbaf0005",

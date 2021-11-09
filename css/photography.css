@@ -12,14 +12,6 @@ body {
     display: block;
 }
 
-h1 {
-    font-size: 300%;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    line-height: 0.75em;
-    text-align: center;
-}
-
 footer {
     position: fixed;
     font-size: 0.85em;
@@ -31,8 +23,22 @@ footer {
     transform: translate(-50%, 0);
 }
 
-span:hover {
+
+#robot {
+    width: 5em;
+    padding: 0 0;
+    margin: 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#robot:hover {
     cursor: pointer;
+}
+
+.robot_container {
+    align-items: center;
 }
 
 .icon {
