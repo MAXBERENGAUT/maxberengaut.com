@@ -7,8 +7,7 @@
 
 body {
     background-color: white;
-    /* padding: 0 35vh; */
-    padding: 0 17.5vw;
+    padding: 0 20vw;
     display: block;
 }
 
@@ -25,9 +24,10 @@ footer {
 
 
 #robot {
-    width: 5em;
+    height: 3.65em;
     padding: 0 0;
     margin: 0 0;
+    margin-top: 2em;
     display: block;
     margin-left: auto;
     margin-right: auto;
