@@ -9,7 +9,7 @@ var items = document.getElementsByClassName("item");
 
 var mouse_X = document.documentElement.clientWidth / 2;
 var menu_hovered_over = false; 
-var menu_offset = document.documentElement.clientWidth / 3;
+var menu_offset = document.documentElement.clientWidth / 4;
 var menu_speed = 0;
 var menu_width = 0;
 
