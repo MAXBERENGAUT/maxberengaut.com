@@ -2,21 +2,43 @@ var img = document.getElementById("img");
 var loc = document.getElementById("location");
 var robot = document.getElementById("robot");
 
-var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/"
+var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/";
+
+var q_index = 0;
+var img_queue = [];
+var loc_queue = [];
+
+function init(){
+    preloadNextImage();
+    preloadNextImage();
+    swapImage();
+}
+
+function swapImage(){
+    img.replaceWith(img_queue[q_index]);
+    img = img_queue[q_index];
+    img.classList.add('fade-in');
+    loc.textContent = loc_queue[q_index];
+
+    img_queue[q_index] = null;
+    loc_queue[q_index] = null;
+    q_index += 1;
+
+    preloadNextImage();
+}
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
-function swapImage(){
-    // update robot
-    robot.src = "./res/robot_clicked.png";
-
-    // change image
-    let keys = Object.keys(locations);
+function preloadNextImage(){
+    let next = new Image();
     let index = getRandomInt(keys.length);
-    img.src = IMG_URL_BASE + keys[index];
-    loc.textContent = locations[keys[index]];
+
+    next.src = IMG_URL_BASE + keys[index];
+
+    img_queue.push(next);
+    loc_queue.push(locations[keys[index]]);
 }
 
 robot.addEventListener("mouseover", e => {
@@ -25,6 +47,11 @@ robot.addEventListener("mouseover", e => {
 
 robot.addEventListener("mouseleave", e => {
     robot.src = "./res/robot_neutral.png";
+});
+
+robot.addEventListener("click", e => {
+    robot.src = "./res/robot_clicked.png";
+    swapImage();
 });
 
 var locations = {
@@ -143,5 +170,7 @@ var locations = {
     113 : "Charlottesville, VA",
 }
 
-swapImage();
-robot.src = "./res/robot_neutral.png";
+var keys = Object.keys(locations);
+
+
+init();
