@@ -144,3 +144,4 @@ var locations = {
 }
 
 swapImage();
+robot.src = "./res/robot_neutral.png";
