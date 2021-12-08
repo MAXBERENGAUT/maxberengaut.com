@@ -55,7 +55,7 @@ robot.addEventListener("click", e => {
 });
 
 var locations = {
-    1   : "Washington D.C.",
+    1   : "Charlottesville, VA",
     2   : "Washington D.C.",
     3   : "Washington D.C.",
     4   : "Washington D.C.",
