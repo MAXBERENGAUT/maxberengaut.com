@@ -56,30 +56,30 @@ robot.addEventListener("click", e => {
 
 var locations = {
     1   : "Charlottesville, VA",
-    2   : "Washington D.C.",
-    3   : "Washington D.C.",
-    4   : "Washington D.C.",
-    5   : "Washington D.C.",
-    6   : "Washington D.C.",
-    7   : "Washington D.C.",
-    8   : "Washington D.C.",
-    9   : "Washington D.C.",
-    10  : "Washington D.C.",
-    11  : "Washington D.C.",
-    12  : "Washington D.C.",
-    13  : "Washington D.C.",
-    14  : "Washington D.C.",
-    15  : "Washington D.C.",
-    16  : "Washington D.C.",
-    17  : "Washington D.C.",
-    18  : "Washington D.C.",
-    19  : "Washington D.C.",
-    20  : "Washington D.C.",
-    21  : "Washington D.C.",
-    22  : "Washington D.C.",
-    23  : "Washington D.C.",
-    24  : "Washington D.C.",
-    25  : "Washington D.C.",
+    2   : "Charlottesville, VA",
+    3   : "Charlottesville, VA",
+    4   : "Charlottesville, VA",
+    5   : "Charlottesville, VA",
+    6   : "Charlottesville, VA",
+    7   : "Charlottesville, VA",
+    8   : "Charlottesville, VA",
+    9   : "Charlottesville, VA",
+    10  : "Charlottesville, VA",
+    11  : "Charlottesville, VA",
+    12  : "Charlottesville, VA",
+    13  : "Charlottesville, VA",
+    14  : "Charlottesville, VA",
+    15  : "Charlottesville, VA",
+    16  : "Charlottesville, VA",
+    17  : "Charlottesville, VA",
+    18  : "Charlottesville, VA",
+    19  : "Charlottesville, VA",
+    20  : "Charlottesville, VA",
+    21  : "Charlottesville, VA",
+    22  : "Charlottesville, VA",
+    23  : "Charlottesville, VA",
+    24  : "Charlottesville, VA",
+    25  : "Charlottesville, VA",
     26  : "Charlottesville, VA",
     27  : "Charlottesville, VA",
     28  : "Charlottesville, VA",
@@ -91,10 +91,10 @@ var locations = {
     34  : "Charlottesville, VA",
     35  : "Charlottesville, VA",
     36  : "Charlottesville, VA",
-    37  : "Washington D.C.",
-    38  : "Washington D.C.",
-    39  : "Washington D.C.",
-    40  : "Washington D.C.",
+    37  : "Charlottesville, VA",
+    38  : "Charlottesville, VA",
+    39  : "Charlottesville, VA",
+    40  : "Charlottesville, VA",
     41  : "Charlottesville, VA",
     42  : "Charlottesville, VA",
     43  : "Charlottesville, VA",
@@ -109,49 +109,49 @@ var locations = {
     52  : "Charlottesville, VA",
     53  : "Charlottesville, VA",
     54  : "Charlottesville, VA",
-    55  : "Charlottesville, VA",
+    55  : "Washington D.C.",
     56  : "Charlottesville, VA",
     57  : "Charlottesville, VA",
     58  : "Charlottesville, VA",
     59  : "Charlottesville, VA",
     60  : "Charlottesville, VA",
-    61  : "Charlottesville, VA",
+    61  : "Washington D.C.",
     62  : "Washington D.C.",
     63  : "Washington D.C.",
-    64  : "Washington D.C.",
-    65  : "Washington D.C.",
-    66  : "Washington D.C.",
-    67  : "Washington D.C.",
-    68  : "Washington D.C.",
-    69  : "Washington D.C.",
-    70  : "Washington D.C.",
-    71  : "Washington D.C.",
-    72  : "Washington D.C.",
-    73  : "Washington D.C.",
-    74  : "Washington D.C.",
-    75  : "Washington D.C.",
-    76  : "Washington D.C.",
+    64  : "Charlottesville, VA",
+    65  : "Charlottesville, VA",
+    66  : "Charlottesville, VA",
+    67  : "Charlottesville, VA",
+    68  : "Charlottesville, VA",
+    69  : "Charlottesville, VA",
+    70  : "Charlottesville, VA",
+    71  : "Charlottesville, VA",
+    72  : "Charlottesville, VA",
+    73  : "Charlottesville, VA",
+    74  : "Charlottesville, VA",
+    75  : "Charlottesville, VA",
+    76  : "Charlottesville, VA",
     77  : "Washington D.C.",
     78  : "Washington D.C.",
     79  : "Washington D.C.",
-    80  : "Valencia, ES",
-    81  : "Valencia, ES",
-    82  : "Valencia, ES",
-    83  : "Valencia, ES",
-    84  : "Valencia, ES",
-    85  : "Valencia, ES",
-    86  : "Valencia, ES",
-    87  : "Valencia, ES",
-    88  : "Valencia, ES",
-    89  : "Valencia, ES",
-    90  : "Valencia, ES",
-    91  : "Valencia, ES",
-    92  : "Valencia, ES",
-    93  : "Valencia, ES",
-    94  : "Valencia, ES",
-    95  : "Valencia, ES",
-    96  : "Valencia, ES",
-    97  : "Valencia, ES",
+    80  : "Washington D.C.",
+    81  : "Charlottesville, VA",
+    82  : "Washington D.C.",
+    83  : "Charlottesville, VA",
+    84  : "Washington D.C.",
+    85  : "Washington D.C.",
+    86  : "Charlottesville, VA",
+    87  : "Charlottesville, VA",
+    88  : "Washington D.C.",
+    89  : "Charlottesville, VA",
+    90  : "Charlottesville, VA",
+    91  : "Charlottesville, VA",
+    92  : "Washington D.C.",
+    93  : "Charlottesville, VA",
+    94  : "Washington D.C.",
+    95  : "Charlottesville, VA",
+    96  : "Washington D.C.",
+    97  : "Washington D.C.",
     98  : "Valencia, ES",
     99  : "Valencia, ES",
     100 : "Valencia, ES",
@@ -162,12 +162,91 @@ var locations = {
     105 : "Valencia, ES",
     106 : "Valencia, ES",
     107 : "Valencia, ES",
-    108 : "Charlottesville, VA",
-    109 : "Charlottesville, VA",
-    110 : "Charlottesville, VA",
-    111 : "Charlottesville, VA",
-    112 : "Charlottesville, VA",
-    113 : "Charlottesville, VA",
+    108 : "Valencia, ES",
+    109 : "Valencia, ES",
+    110 : "Valencia, ES",
+    111 : "Valencia, ES",
+    112 : "Valencia, ES",
+    113 : "Valencia, ES",
+    114 : "Valencia, ES"
+    115 : "Valencia, ES"
+    116 : "Valencia, ES"
+    117 : "Valencia, ES"
+    118 : "Valencia, ES"
+    119 : "Valencia, ES"
+    120 : "Valencia, ES"
+    121 : "Valencia, ES"
+    122 : "Valencia, ES"
+    123 : "Valencia, ES"
+    124 : "Valencia, ES"
+    125 : "Valencia, ES"
+    126 : "Valencia, ES"
+    127 : "Washington D.C."
+    128 : "Washington D.C."
+    129 : "Washington D.C."
+    130 : "Valencia, ES"
+    131 : "Washington D.C."
+    132 : "Washington D.C."
+    133 : "Washington D.C."
+    134 : "Washington D.C."
+    135 : "Valencia, ES"
+    136 : "Charlottesville, VA"
+    137 : "Charlottesville, VA"
+    138 : "Washington D.C."
+    139 : "Washington D.C."
+    140 : "Charlottesville, VA"
+    141 : "Valencia, ES"
+    142 : "Valencia, ES"
+    143 : "Charlottesville, VA"
+    144 : "Charlottesville, VA"
+    145 : "Charlottesville, VA"
+    146 : "Washington D.C."
+    147 : "Washington D.C."
+    148 : "Charlottesville, VA"
+    149 : "Charlottesville, VA"
+    150 : "Valencia, ES"
+    151 : "Valencia, ES"
+    152 : "Washington D.C."
+    153 : "Washington D.C."
+    154 : "Washington D.C."
+    155 : "Washington D.C."
+    156 : "Washington D.C."
+    157 : "Washington D.C."
+    158 : "Washington D.C."
+    159 : "Washington D.C."
+    160 : "Washington D.C."
+    161 : "Washington D.C."
+    162 : "Washington D.C."
+    163 : "Washington D.C."
+    164 : "Washington D.C."
+    165 : "Washington D.C."
+    166 : "Washington D.C."
+    167 : "Washington D.C."
+    168 : "Charlottesville, VA"
+    169 : "Washington D.C."
+    170 : "Charlottesville, VA"
+    171 : "Charlottesville, VA"
+    172 : "Washington D.C."
+    173 : "Charlottesville, VA"
+    174 : "Charlottesville, VA"
+    175 : "Washington D.C"
+    176 : "Washington D.C"
+    177 : "Washington D.C"
+    178 : "Washington D.C"
+    179 : "Washington D.C"
+    180 : "Washington D.C"
+    181 : "Washington D.C"
+    182 : "Washington D.C"
+    183 : "Charlottesville, VA"
+    184 : "Washington D.C"
+    185 : "Washington D.C."
+    186 : "Charlottesville, VA"
+    187 : "Charlottesville, VA"
+    188 : "Charlottesville, VA"
+    189 : "Washington D.C."
+    190 : "Charlottesville, VA"
+    
+        
 }
 
 var keys = Object.keys(locations);
