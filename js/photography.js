@@ -4,35 +4,42 @@ var robot = document.getElementById("robot");
 
 var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/";
 
+var Q_MAX = 5;
+
 var q_index = 0;
 var img_queue = [];
 var loc_queue = [];
 
 function init(){
-    preloadNextImage();
-    preloadNextImage();
-    swapImage();
+    // set up first image
+    let index = getRandomInt(keys.length);
+    img.src = IMG_URL_BASE + keys[index];
+    img.onload = updateQueue;
 }
 
 function swapImage(){
     img.replaceWith(img_queue[q_index]);
     img = img_queue[q_index];
-    img.classList.add('fade-in');
+    img.classList.add('img-fade-in');
     loc.textContent = loc_queue[q_index];
 
     img_queue[q_index] = null;
     loc_queue[q_index] = null;
     q_index += 1;
 
-    preloadNextImage();
+    updateQueue();
 }
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
-function preloadNextImage(){
+function updateQueue(){
+    // return if queue is full
+    if (img_queue.length - q_index >= Q_MAX) return;
+
     let next = new Image();
+    next.onload = updateQueue;
     let index = getRandomInt(keys.length);
 
     next.src = IMG_URL_BASE + keys[index];
@@ -168,85 +175,83 @@ var locations = {
     111 : "Valencia, ES",
     112 : "Valencia, ES",
     113 : "Valencia, ES",
-    114 : "Valencia, ES"
-    115 : "Valencia, ES"
-    116 : "Valencia, ES"
-    117 : "Valencia, ES"
-    118 : "Valencia, ES"
-    119 : "Valencia, ES"
-    120 : "Valencia, ES"
-    121 : "Valencia, ES"
-    122 : "Valencia, ES"
-    123 : "Valencia, ES"
-    124 : "Valencia, ES"
-    125 : "Valencia, ES"
-    126 : "Valencia, ES"
-    127 : "Washington D.C."
-    128 : "Washington D.C."
-    129 : "Washington D.C."
-    130 : "Valencia, ES"
-    131 : "Washington D.C."
-    132 : "Washington D.C."
-    133 : "Washington D.C."
-    134 : "Washington D.C."
-    135 : "Valencia, ES"
-    136 : "Charlottesville, VA"
-    137 : "Charlottesville, VA"
-    138 : "Washington D.C."
-    139 : "Washington D.C."
-    140 : "Charlottesville, VA"
-    141 : "Valencia, ES"
-    142 : "Valencia, ES"
-    143 : "Charlottesville, VA"
-    144 : "Charlottesville, VA"
-    145 : "Charlottesville, VA"
-    146 : "Washington D.C."
-    147 : "Washington D.C."
-    148 : "Charlottesville, VA"
-    149 : "Charlottesville, VA"
-    150 : "Valencia, ES"
-    151 : "Valencia, ES"
-    152 : "Washington D.C."
-    153 : "Washington D.C."
-    154 : "Washington D.C."
-    155 : "Washington D.C."
-    156 : "Washington D.C."
-    157 : "Washington D.C."
-    158 : "Washington D.C."
-    159 : "Washington D.C."
-    160 : "Washington D.C."
-    161 : "Washington D.C."
-    162 : "Washington D.C."
-    163 : "Washington D.C."
-    164 : "Washington D.C."
-    165 : "Washington D.C."
-    166 : "Washington D.C."
-    167 : "Washington D.C."
-    168 : "Charlottesville, VA"
-    169 : "Washington D.C."
-    170 : "Charlottesville, VA"
-    171 : "Charlottesville, VA"
-    172 : "Washington D.C."
-    173 : "Charlottesville, VA"
-    174 : "Charlottesville, VA"
-    175 : "Washington D.C"
-    176 : "Washington D.C"
-    177 : "Washington D.C"
-    178 : "Washington D.C"
-    179 : "Washington D.C"
-    180 : "Washington D.C"
-    181 : "Washington D.C"
-    182 : "Washington D.C"
-    183 : "Charlottesville, VA"
-    184 : "Washington D.C"
-    185 : "Washington D.C."
-    186 : "Charlottesville, VA"
-    187 : "Charlottesville, VA"
-    188 : "Charlottesville, VA"
-    189 : "Washington D.C."
-    190 : "Charlottesville, VA"
-    
-        
+    115 : "Valencia, ES",
+    114 : "Valencia, ES",
+    116 : "Valencia, ES",
+    117 : "Valencia, ES",
+    118 : "Valencia, ES",
+    119 : "Valencia, ES",
+    120 : "Valencia, ES",
+    121 : "Valencia, ES",
+    122 : "Valencia, ES",
+    123 : "Valencia, ES",
+    124 : "Valencia, ES",
+    125 : "Valencia, ES",
+    126 : "Valencia, ES",
+    127 : "Washington D.C.",
+    128 : "Washington D.C.",
+    129 : "Washington D.C.",
+    130 : "Valencia, ES",
+    131 : "Washington D.C.",
+    132 : "Washington D.C.",
+    133 : "Washington D.C.",
+    134 : "Washington D.C.",
+    135 : "Valencia, ES",
+    136 : "Charlottesville, VA",
+    137 : "Charlottesville, VA",
+    138 : "Washington D.C.",
+    139 : "Washington D.C.",
+    140 : "Charlottesville, VA",
+    141 : "Valencia, ES",
+    142 : "Valencia, ES",
+    143 : "Charlottesville, VA",
+    144 : "Charlottesville, VA",
+    145 : "Charlottesville, VA",
+    146 : "Washington D.C.",
+    147 : "Washington D.C.",
+    148 : "Charlottesville, VA",
+    149 : "Charlottesville, VA",
+    150 : "Valencia, ES",
+    151 : "Valencia, ES",
+    152 : "Washington D.C.",
+    153 : "Washington D.C.",
+    154 : "Washington D.C.",
+    155 : "Washington D.C.",
+    156 : "Washington D.C.",
+    157 : "Washington D.C.",
+    158 : "Washington D.C.",
+    159 : "Washington D.C.",
+    160 : "Washington D.C.",
+    161 : "Washington D.C.",
+    162 : "Washington D.C.",
+    163 : "Washington D.C.",
+    164 : "Washington D.C.",
+    165 : "Washington D.C.",
+    166 : "Washington D.C.",
+    167 : "Washington D.C.",
+    168 : "Charlottesville, VA",
+    169 : "Washington D.C.",
+    170 : "Charlottesville, VA",
+    171 : "Charlottesville, VA",
+    172 : "Washington D.C.",
+    173 : "Charlottesville, VA",
+    174 : "Charlottesville, VA",
+    175 : "Washington D.C",
+    176 : "Washington D.C",
+    177 : "Washington D.C",
+    178 : "Washington D.C",
+    179 : "Washington D.C",
+    180 : "Washington D.C",
+    181 : "Washington D.C",
+    182 : "Washington D.C",
+    183 : "Charlottesville, VA",
+    184 : "Washington D.C",
+    185 : "Washington D.C.",
+    186 : "Charlottesville, VA",
+    187 : "Charlottesville, VA",
+    188 : "Charlottesville, VA",
+    189 : "Washington D.C.",
+    190 : "Charlottesville, VA",
 }
 
 var keys = Object.keys(locations);
