@@ -1,0 +1,83 @@
+* {
+    font-family: 'TiemposText', Helvetica, sans-serif;
+    line-height: 2em;
+    color: white;
+}
+
+body {
+    background-color: black;
+    padding: 0 25vw;
+    display: block;
+}
+
+h1 {
+    font-family: 'TiemposHeadline', Helvetica, sans-serif;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 0.75em;
+}
+
+h2, h4, figcaption {
+    font-family: 'Walfork', Helvetica, sans-serif;
+}
+
+.number {
+    font-family: 'Walfork', Helvetica, sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+.icon {
+    mix-blend-mode: multiply;
+    position: fixed;
+    width: 2.25em;
+    height: 2.25em;
+    top: 3em;
+    left: 3em;
+    filter: invert(1);
+}
+
+.center {
+    text-align: center;
+}
+
+.spacer {
+    height: 15vh;
+}
+
+.divider {
+    border-bottom: 2px solid rgb(0, 0, 114);
+    width: 100px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade-in {
+    -webkit-animation: fade-in 2s forwards;
+    -moz-animation: fade-in 2s forwards;
+    -o-animation: fade-in 2s forwards;
+    -ms-animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards;
+}
+
+.album-cover {
+    float: left;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+}
+
+img {
+    width: 17.5vw;
+}
+
+
+hr {
+    margin: 5vh 0
+}
+
+@-webkit-keyframes  fade-in { from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes     fade-in { from { opacity: 0; } to { opacity: 1; }}
+@-o-keyframes       fade-in { from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes      fade-in { from { opacity: 0; } to { opacity: 1; }}
+@keyframes          fade-in { from { opacity: 0; } to { opacity: 1; }}
