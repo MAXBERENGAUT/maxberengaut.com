@@ -1,15 +1,18 @@
-INFINITE_MENU_JS = document.currentScript;
+// OPTIONS
 
 const updates_per_second = 60;
 const menu_speed_max = 4;
 const menu_resistance = 10;
+
+var menu_offset = document.documentElement.clientWidth / 4;
+
+//
 
 var menu = document.getElementById("menu");
 var items = document.getElementsByClassName("item");
 
 var mouse_X = document.documentElement.clientWidth / 2;
 var menu_hovered_over = false; 
-var menu_offset = document.documentElement.clientWidth / 4;
 var menu_speed = 0;
 var menu_width = 0;
 

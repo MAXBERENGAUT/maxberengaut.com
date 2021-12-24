@@ -68,10 +68,14 @@ footer {
     top: 0;
 }
 
-#location {
-    text-align: right;
+#metadata {
+    text-align: left;
     line-height: 1.5em;
     margin: 0.25em 0;
+}
+
+#location {
+    float: right;
 }
 
 
