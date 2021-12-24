@@ -22,6 +22,36 @@ footer {
     transform: translate(-50%, 0);
 }
 
+form {
+    display: none;
+    height: 1.625em;
+    margin-top: 3.68em;
+    margin-bottom: 2.8em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+form > input {
+    width: 70%;
+}
+
+form > button {
+    margin-left: 2%;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+form > button:hover, form > span:hover {
+    border-width: 2px;
+    font-weight: bold;
+}
+
+form > button:focus, form > span:focus {
+    background-color: #f0f0f0;
+}
 
 #robot {
     height: 3.65em;
@@ -38,6 +68,16 @@ footer {
     cursor: pointer;
 }
 
+#metadata {
+    text-align: left;
+    line-height: 1.5em;
+    margin: 0.25em 0;
+}
+
+#location {
+    float: right;
+}
+
 .robot_container {
     align-items: center;
 }
@@ -51,11 +91,6 @@ footer {
     left: 3em;
 }
 
-/* #img {
-    width: 100%;
-    padding-bottom: 66.67%;
-} */
-
 .featured {
     position: relative;
     width: 100%;
@@ -67,17 +102,6 @@ footer {
     width: 100%;
     top: 0;
 }
-
-#metadata {
-    text-align: left;
-    line-height: 1.5em;
-    margin: 0.25em 0;
-}
-
-#location {
-    float: right;
-}
-
 
 .fade-in {
     -webkit-animation: fade-in 2s forwards;
