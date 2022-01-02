@@ -1,3 +1,4 @@
+
 // OPTIONS
 
 var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/";
@@ -36,21 +37,6 @@ function init(){
         robot_faces[0].src = "./res/robot_hovered.png"
         robot_faces[1].src = "./res/robot_clicked.png"
     }
-}
-
-// via https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
-function getJSON(url) {
-    let resp  = '' ;
-    let xmlHttp = new XMLHttpRequest();
-
-    if(xmlHttp != null)
-    {
-        xmlHttp.open( "GET", url, false );
-        xmlHttp.send( null );
-        resp = xmlHttp.responseText;
-    }
-
-    return JSON.parse(resp);
 }
 
 // via https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array

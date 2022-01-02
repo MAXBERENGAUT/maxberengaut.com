@@ -21,12 +21,6 @@ h2, h4, figcaption {
     font-family: 'Walfork', Helvetica, sans-serif;
 }
 
-.number {
-    font-family: 'Walfork', Helvetica, sans-serif;
-    font-size: 300%;
-    text-align: center;
-}
-
 .icon {
     mix-blend-mode: multiply;
     position: fixed;
@@ -53,27 +47,44 @@ h2, h4, figcaption {
     margin-right: auto;
 }
 
+/* LIST ITEM STYLES*/
+
+.number {
+    font-family: 'Walfork', Helvetica, sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+.cover-left {
+    float: left;
+    margin-right: 3vw;
+    margin-bottom: 1.7vw;
+    width: 17.5vw;
+}
+
+.cover-right {
+    float: right;
+    margin-left: 3vw;
+    margin-bottom: 1.7vw;
+    width: 17.5vw;
+}
+
+hr {
+    clear: both;
+    background-color: rgb(0, 0, 114);
+    margin: 5vh 0;
+    border: none;
+    height: 2px;
+}
+
+/* END LIST ITEM STYLES */
+
 .fade-in {
     -webkit-animation: fade-in 2s forwards;
     -moz-animation: fade-in 2s forwards;
     -o-animation: fade-in 2s forwards;
     -ms-animation: fade-in 2s forwards;
     animation: fade-in 2s forwards;
-}
-
-.album-cover {
-    float: left;
-    margin-right: 3vw;
-    margin-bottom: 3vw;
-}
-
-img {
-    width: 17.5vw;
-}
-
-
-hr {
-    margin: 5vh 0
 }
 
 @-webkit-keyframes  fade-in { from { opacity: 0; } to { opacity: 1; }}
