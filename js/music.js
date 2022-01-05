@@ -11,7 +11,8 @@ var list_container = document.getElementById("list_container");
 var songs = getJSON("./json/songs.json")
 
 function generateEntries(){
-    for (let entry of songs) {
+    for (let i = 0; i < songs.length; i++) {
+        let entry = songs[i];
         console.log(entry);
         let styles = entry["styles"];
 
@@ -26,8 +27,7 @@ function generateEntries(){
         if ("number" in styles) number.classList.add(styles["number"]);
 
         let cover = document.createElement("img");
-        // cover.src = IMG_URL_BASE + key;
-        cover.src = "res/Kendrick-Lamar-Alright.jpg";
+        cover.src = IMG_URL_BASE + i + ".png";
         if ("cover" in styles) cover.classList.add(styles["cover"]);
 
         let header = document.createElement("h2");
