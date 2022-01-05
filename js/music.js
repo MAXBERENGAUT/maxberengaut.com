@@ -27,7 +27,7 @@ function generateEntries(){
         if ("number" in styles) number.classList.add(styles["number"]);
 
         let cover = document.createElement("img");
-        cover.src = IMG_URL_BASE + i + ".png";
+        cover.src = IMG_URL_BASE + i + ".jpg";
         if ("cover" in styles) cover.classList.add(styles["cover"]);
 
         let header = document.createElement("h2");
