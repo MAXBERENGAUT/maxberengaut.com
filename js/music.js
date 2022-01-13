@@ -1,19 +1,28 @@
 
 // OPTIONS
 
+const updates_per_second = 60;
+
 var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Covers/"
 
 //
 
 var list_container = document.getElementById("list_container");
+var navigation = document.getElementById("navigation");
+var marker = document.getElementById("marker");
+var playlists = document.getElementById("playlists");
+var playlists_trigger = document.getElementById("playlists-trigger");
 
 // load songs from json
 var songs = getJSON("./json/songs.json")
 
+generateEntries();
+initMarker();
+initPlaylists();
+
 function generateEntries(){
     for (let i = 0; i < songs.length; i++) {
         let entry = songs[i];
-        console.log(entry);
         let styles = entry["styles"];
 
         let list_item = document.createElement("div");
@@ -23,6 +32,7 @@ function generateEntries(){
 
         let rank = document.createElement("h2");
         rank.innerHTML = entry["rank"];
+        rank.id = songs.length - i;
         rank.classList.add("number")
 
         let cover = document.createElement("img");
@@ -67,4 +77,33 @@ function generateEntries(){
     }
 }
 
-generateEntries();
+function initMarker(){
+    marker.style.left = navigation.getBoundingClientRect().right + "px";
+    setInterval(updateMarker, 1000 / updates_per_second);
+}
+
+function updateMarker(){
+    let position = (document.documentElement.scrollTop / document.documentElement.scrollHeight) * navigation.getBoundingClientRect().height + navigation.getBoundingClientRect().top;
+    marker.style.top = position + "px";
+}
+
+function initPlaylists(){
+    hidePlaylists();
+
+    playlists_trigger.addEventListener("mouseenter", showPlaylists);
+    playlists.addEventListener("mouseleave", hidePlaylists);
+}
+
+function hidePlaylists(){
+    playlists.childNodes.forEach((e, i) => {
+        if (e.nodeName.toLowerCase() == 'a' && e != playlists_trigger)
+            e.style.display = "none";
+    });
+}
+
+function showPlaylists(){
+    playlists.childNodes.forEach((e, i) => {
+        if (e.nodeName.toLowerCase() == 'a')
+            e.style.display = "block";
+    })
+}
