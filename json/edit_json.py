@@ -13,7 +13,12 @@ with open(JSON_FILE_IN, 'r') as infile:
 DATA_OUT = []
 
 for k in DATA_IN:
-    DATA_OUT.append(DATA_IN[k])
+    styles = k["styles"]
+    del k["styles"]
+    k["lyric"] = ""
+    k["styles"] = styles
+
+    DATA_OUT.append(k)
 
 
 ''' *************** '''

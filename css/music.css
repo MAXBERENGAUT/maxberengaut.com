@@ -68,7 +68,7 @@ h2, h4, figcaption {
     flex-direction: column;
     text-align: left;
     top: 9em;
-    right: 3em;
+    right: 7em;
 }
 
 #playlists > a {
@@ -82,7 +82,12 @@ h2, h4, figcaption {
 }
 
 #playlists > a:hover {
-    color: #999999
+    filter: brightness(150%);
+}
+
+#playlists > span {
+    line-height: 1em;
+    height: 0;
 }
 
 #playlists-trigger {
@@ -127,6 +132,14 @@ h2, h4, figcaption {
     width: 17.5vw;
 }
 
+.lyric {
+    clear: both;
+    text-align: center;
+    width: 95vw;
+    margin-left: -22.5vw;
+    font-size: 200%;
+}
+
 hr {
     clear: both;
     background-color: rgb(0, 0, 114);
@@ -134,6 +147,7 @@ hr {
     border: none;
     height: 2px;
 }
+
 
 /* END LIST ITEM STYLES */
 

@@ -45,8 +45,14 @@ function generateEntries(){
         if (entry["write_up"] != ""){
             write_up.innerHTML = entry["write_up"];
         } else {
-            write_up.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida neque sed metus bibendum sagittis. Sed tempus metus ut arcu scelerisque, vitae suscipit mauris suscipit. Morbi eu sapien vel purus blandit vulputate. Sed a ante bibendum, rutrum erat et, tincidunt velit. Donec varius felis magna, sit amet elementum mi consectetur vel. Morbi non ligula ac massa pretium lacinia ac ut felis. Aenean egestas suscipit mi in fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida neque sed metus bibendum sagittis. Sed tempus metus ut arcu scelerisque, vitae suscipit mauris suscipit. Morbi eu sapien vel purus blandit vulputate. Sed a ante bibendum, rutrum erat et, tincidunt velit. Donec varius felis magna, sit amet elementum mi consectetur vel. Morbi non ligula ac massa pretium lacinia ac ut felis."
+            write_up.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida neque sed metus bibendum sagittis. Sed tempus metus ut arcu scelerisque, vitae suscipit mauris suscipit. Morbi eu sapien vel purus blandit vulputate. Sed a ante bibendum, rutrum erat et, tincidunt velit. Donec varius felis magna, sit amet elementum mi consectetur vel. Morbi non ligula ac massa pretium lacinia ac ut felis."
         }
+
+        let lyric = document.createElement("div");
+        if(entry["lyric"] != "") {
+            lyric.innerHTML = '"' + entry["lyric"] + '"';
+        }
+        lyric.classList.add("lyric");
         
         for (let style in styles){
             switch (style) {
@@ -62,6 +68,8 @@ function generateEntries(){
                 case "write_up":
                     write_up.classList.add(styles[style]);
                     break;
+                case "lyric":
+                    lyric.classList.add(styles[style]);
             }
         }
 
@@ -71,6 +79,7 @@ function generateEntries(){
         list_item.appendChild(cover);
         list_item.appendChild(header);
         list_item.appendChild(write_up);
+        list_item.appendChild(lyric);
 
         // append list item to list
         list_container.appendChild(list_item);
@@ -78,7 +87,7 @@ function generateEntries(){
 }
 
 function initMarker(){
-    marker.style.left = navigation.getBoundingClientRect().right + "px";
+    marker.style.left = (navigation.getBoundingClientRect().right + 2 * marker.getBoundingClientRect().width) + "px";
     setInterval(updateMarker, 1000 / updates_per_second);
 }
 
