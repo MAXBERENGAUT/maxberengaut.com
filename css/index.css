@@ -63,6 +63,11 @@ footer {
     cursor: pointer;
 }
 
+.unreleased {
+    color: gray;
+    cursor: default;
+}
+
 @-webkit-keyframes  zoom { to { font-size: 25000%; }}
 @-moz-keyframes     zoom { to { font-size: 25000%; }}
 @-o-keyframes       zoom { to { font-size: 25000%; }}

@@ -110,6 +110,8 @@ menu.addEventListener('mouseleave', () => {
 
 // for each item on click, transition and redirect
 for (let item of items){
+  if (item.classList.contains("unreleased")) continue;
+
   item.addEventListener("click", e => {
     // stop rotation
     clearInterval(update_interval);
