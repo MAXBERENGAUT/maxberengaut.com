@@ -1,7 +1,5 @@
 * {
     font-family: 'Raleway', Verdana;
-    word-spacing: 0.25em;
-    line-height: 1.5em;
     color: black;
 }
 
@@ -12,21 +10,24 @@ body {
 }
 
 h1 {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 300%;
-    line-height: 1em;
+    line-height: 79px;
 }
 
-.list-wrapper {
-  position:relative;
+a {
+    text-decoration: none;
 }
 
-.list-item {
-  margin-top: 70px;
+.story-list {
   position: relative;
 }
 
-.list-bullet {
+.story {
+  margin-top: 70px;
+}
+
+.bullet {
   float: left;
   margin-right: -55px;
   background: white;
