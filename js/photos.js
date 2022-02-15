@@ -34,8 +34,8 @@ function init(){
 
         // load other robot faces
         var robot_faces = [new Image(), new Image()];
-        robot_faces[0].src = "./res/robot_hovered.png"
-        robot_faces[1].src = "./res/robot_clicked.png"
+        robot_faces[0].src = "./images/robot_hovered.png"
+        robot_faces[1].src = "./images/robot_clicked.png"
     }
 }
 
@@ -101,7 +101,7 @@ function updateRobot(){
         robot_clicked = false;
         robot.style.cursor = "pointer";
 
-        robot.src = robot_hovered ? "./res/robot_hovered.png" : "./res/robot_neutral.png";
+        robot.src = robot_hovered ? "./images/robot_hovered.png" : "./images/robot_neutral.png";
 
     } else {
         // check again in 0.1s
@@ -112,13 +112,13 @@ function updateRobot(){
 robot.addEventListener("mouseover", e => {
     robot_hovered = true;
     if (!robot_clicked) 
-        robot.src = "./res/robot_hovered.png";
+        robot.src = "./images/robot_hovered.png";
 });
 
 robot.addEventListener("mouseleave", e => {
     robot_hovered = false;
     if (!robot_clicked)
-        robot.src = "./res/robot_neutral.png";
+        robot.src = "./images/robot_neutral.png";
 });
 
 robot.addEventListener("click", e => {
@@ -128,7 +128,7 @@ robot.addEventListener("click", e => {
     // reflect click in robot
     robot_clicked = true;
     robot.style.cursor = "progress";
-    robot.src = "./res/robot_clicked.png";
+    robot.src = "./images/robot_clicked.png";
     
     if(keys.length == 0 && queue_index == img_queue.length){
         easterEgg();
