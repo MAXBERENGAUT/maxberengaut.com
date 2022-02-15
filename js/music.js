@@ -20,6 +20,21 @@ generateEntries();
 initMarker();
 initPlaylists();
 
+// via https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
+function getJSON(url) {
+    let resp  = '' ;
+    let xmlHttp = new XMLHttpRequest();
+
+    if(xmlHttp != null)
+    {
+        xmlHttp.open( "GET", url, false );
+        xmlHttp.send( null );
+        resp = xmlHttp.responseText;
+    }
+
+    return JSON.parse(resp);
+}
+
 function generateEntries(){
     for (let i = 0; i < songs.length; i++) {
         let entry = songs[i];
@@ -39,13 +54,19 @@ function generateEntries(){
         cover.src = IMG_URL_BASE + (songs.length - i) + ".jpg";
 
         let header = document.createElement("h2");
-        header.innerHTML = entry["artist"] + ": \"" + entry["title"] + "\" (" + entry["year"] + ")";
+        header.innerHTML = `${entry["artist"]}: "${entry["title"]}" (${entry["year"]})`;
 
         let write_up = document.createElement("div");
         if (entry["write_up"] != ""){
             write_up.innerHTML = entry["write_up"];
         } else {
-            write_up.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida neque sed metus bibendum sagittis. Sed tempus metus ut arcu scelerisque, vitae suscipit mauris suscipit. Morbi eu sapien vel purus blandit vulputate. Sed a ante bibendum, rutrum erat et, tincidunt velit. Donec varius felis magna, sit amet elementum mi consectetur vel. Morbi non ligula ac massa pretium lacinia ac ut felis."
+            write_up.innerHTML = `Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit. Nam gravida neque sed metus bibendum sagittis. 
+            Sed tempus metus ut arcu scelerisque, vitae suscipit mauris 
+            suscipit. Morbi eu sapien vel purus blandit vulputate. Sed a ante 
+            bibendum, rutrum erat et, tincidunt velit. Donec varius felis 
+            magna, sit amet elementum mi consectetur vel. Morbi non ligula ac 
+            massa pretium lacinia ac ut felis.`
         }
 
         let lyric = document.createElement("div");

@@ -42,52 +42,49 @@ function updateMenu(){
     menu_offset += items.item(0).clientWidth;
     menu.appendChild(items.item(0));
   }
-  
-  // // if we have moved the menu right s.t. the last element is off-screen
-  // // NOTE: this was broken by initial gap
-  // else if (menu_offset > 0) {
-    //   menu_offset -= items.item(items.length - 1).clientWidth;
-    //   menu.insertBefore(items.item(items.length - 1), menu.firstChild);
-    // }
     
-    // adjust speed if mouse hovering
-    if (menu_hovered_over){
-      let mouse_pos = (2 * mouse_X) / (document.documentElement.clientWidth) - 1;
-      if (mouse_pos < 0) mouse_pos = 0;   // adjustment for only moving menu right
-      menu_speed = ((menu_resistance - 1) / menu_resistance) * menu_speed + (1 / menu_resistance) * menu_speed_max * mouse_pos;
+  // adjust speed if mouse hovering
+  if (menu_hovered_over){
+    let mouse_pos = (2 * mouse_X) / document.documentElement.clientWidth - 1;
+    
+    // adjustment for only moving menu right
+    mouse_pos = Math.max(mouse_pos, 0)
+
+    menu_speed *= ((menu_resistance - 1) / menu_resistance);
+    menu_speed += (1 / menu_resistance) * menu_speed_max * mouse_pos;
+  }
+    
+  // lower speed if mouse not hovering
+  else {
+    menu_speed *= (menu_resistance - 1) / menu_resistance;
+    if (Math.abs(menu_speed) < 0.01) {
+      menu_speed = 0;
+      clearInterval(update_interval);
     }
-    
-    // lower speed if mouse not hovering
-    else {
-      menu_speed *= (menu_resistance - 1) / menu_resistance;
-      if (Math.abs(menu_speed) < 0.01) {
-        menu_speed = 0;
-        clearInterval(update_interval);
-      }
-    }
-    
-    // update menu position
-    menu_offset -= menu_speed;
-    menu.style.transform = "translateX(" + menu_offset + "px)";
   }
+    
+  // update menu position
+  menu_offset -= menu_speed;
+  menu.style.transform = `translateX(${menu_offset}px)`;
+}
   
-  function doubleMenuItems(){
-    let duplicates = [];
-    for (let item of items){ duplicates.push(item.cloneNode(true)); }
-    for (let duplicate of duplicates){ menu.appendChild(duplicate); }
-    
-    // update internally stored menu width
-    menu_width *= 2;
-  }
+function doubleMenuItems(){
+  let duplicates = [];
+  for (let item of items){ duplicates.push(item.cloneNode(true)); }
+  for (let duplicate of duplicates){ menu.appendChild(duplicate); }
   
-  // set animation in all browsers
-  function setAnimation(node, animationText){
-    node.style["-webkit-animation"] = animationText;
-    node.style["-moz-animation"] = animationText;
-    node.style["-o-animation"] = animationText;
-    node.style["-ms-animation"] = animationText;
-    node.style["animation"] = animationText;
-  }
+  // update internally stored menu width
+  menu_width *= 2;
+}
+
+// set animation in all browsers
+function setAnimation(node, animationText){
+  node.style["-webkit-animation"] = animationText;
+  node.style["-moz-animation"] = animationText;
+  node.style["-o-animation"] = animationText;
+  node.style["-ms-animation"] = animationText;
+  node.style["animation"] = animationText;
+}
 
 // on mouse move, record mouse x position
 document.addEventListener('mousemove', e => {

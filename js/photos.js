@@ -23,6 +23,7 @@ var images_loaded = 0;
 var img_queue = [];
 var loc_queue = [];
 
+init();
 
 function init(){
     // set up first image
@@ -96,6 +97,21 @@ function easterEgg(){
 
 }
 
+// via https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
+function getJSON(url) {
+    let resp  = '' ;
+    let xmlHttp = new XMLHttpRequest();
+
+    if(xmlHttp != null)
+    {
+        xmlHttp.open( "GET", url, false );
+        xmlHttp.send( null );
+        resp = xmlHttp.responseText;
+    }
+
+    return JSON.parse(resp);
+}
+
 function updateRobot(){
     if (images_loaded > 0){
         robot_clicked = false;
@@ -142,5 +158,3 @@ robot.addEventListener("click", e => {
         setTimeout(updateRobot, 1000);
     }
 });
-
-init();
