@@ -1,0 +1,72 @@
+* {
+    font-family: 'Raleway', Verdana;
+    word-spacing: 0.25em;
+    line-height: 1.5em;
+    color: black;
+}
+
+body {
+    background-color: white;
+    padding: 0 5vw;
+    display: block;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 300%;
+    line-height: 1em;
+}
+
+.list-wrapper {
+  position:relative;
+}
+
+.list-item {
+  margin-top: 70px;
+  position: relative;
+}
+
+.list-bullet {
+  float: left;
+  margin-right: -55px;
+  background: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 75px;
+  width: 75px;
+  border-radius: 100px;
+}
+
+.line {
+  background: black;
+  z-index: -1;
+  width: 2px;
+  height: 110%;
+  position: absolute;
+  left: 37.5px;
+  top: -70px;
+}
+
+.icon {
+    mix-blend-mode: multiply;
+    position: fixed;
+    width: 2.25em;
+    height: 2.25em;
+    top: 3em;
+    left: 3em;
+}
+
+.fade-in {
+    -webkit-animation: fade-in 2s forwards;
+    -moz-animation: fade-in 2s forwards;
+    -o-animation: fade-in 2s forwards;
+    -ms-animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards;
+}
+
+@-webkit-keyframes  fade-in { from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes     fade-in { from { opacity: 0; } to { opacity: 1; }}
+@-o-keyframes       fade-in { from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes      fade-in { from { opacity: 0; } to { opacity: 1; }}
+@keyframes          fade-in { from { opacity: 0; } to { opacity: 1; }}
