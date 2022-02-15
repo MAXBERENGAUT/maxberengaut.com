@@ -11,7 +11,7 @@ body {
 
 h1 {
     padding-top: 10px;
-    font-size: 400%;
+    font-size: 350%;
     line-height: 79px;
 }
 
@@ -24,7 +24,7 @@ a {
 }
 
 .story {
-  margin-top: 70px;
+  margin-top: 85px;
 }
 
 .bullet {
@@ -46,7 +46,7 @@ a {
   height: 110%;
   position: absolute;
   left: 37.5px;
-  top: -70px;
+  top: -100px;
 }
 
 .icon {
