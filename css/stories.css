@@ -1,5 +1,5 @@
 * {
-  font-family: 'Raleway', Verdana;
+  font-family: Georgia, Verdana;
   color: black;
 }
 
@@ -11,28 +11,36 @@ body {
 
 main {
   padding: 0 15vw;
+  padding-top: 10em;
 }
 
 h1 {
+  font-family: 'Raleway', Verdana;
   padding-top: 10px;
   font-size: 350%;
   line-height: 79px;
 }
 
+section {
+  padding: 0.5em 0;
+}
+
+section::first-letter {
+  font-size: 400%
+}
+
 p {
   text-indent: 1em;
   font-size: large;
-  font-family: Georgia;
   line-height: 200%;
 }
-
 
 a {
   text-decoration: none;
 }
 
 .title {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 8vw;
   height: 100%;
