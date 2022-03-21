@@ -25,6 +25,7 @@ var loc_queue = [];
 
 init();
 
+
 function init(){
     // set up first image
     let key = keys.pop();
@@ -39,6 +40,7 @@ function init(){
         robot_faces[1].src = "./images/robot_clicked.png"
     }
 }
+
 
 // via https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
@@ -59,6 +61,7 @@ function shuffle(array) {
     return array;
 }
 
+
 function swapImage(){
     img.replaceWith(img_queue[queue_index]);
     img = img_queue[queue_index];
@@ -70,6 +73,7 @@ function swapImage(){
     queue_index += 1;
     images_loaded -= 1;
 }
+
 
 function queueNextImage(){
     // return if queue is full or no more images
@@ -90,12 +94,14 @@ function imgOnLoad(){
     queueNextImage();
 }
 
+
 function easterEgg(){
     // TODO: replace robot with phone number entry box
     robot.style.display = "none";
     form.style.display = "flex";
 
 }
+
 
 // via https://stackoverflow.com/questions/19440589/parsing-json-data-from-a-url
 function getJSON(url) {
@@ -112,6 +118,7 @@ function getJSON(url) {
     return JSON.parse(resp);
 }
 
+
 function updateRobot(){
     if (images_loaded > 0){
         robot_clicked = false;
@@ -125,17 +132,20 @@ function updateRobot(){
     }
 }
 
+
 robot.addEventListener("mouseover", e => {
     robot_hovered = true;
     if (!robot_clicked) 
         robot.src = "./images/robot_hovered.png";
 });
 
+
 robot.addEventListener("mouseleave", e => {
     robot_hovered = false;
     if (!robot_clicked)
         robot.src = "./images/robot_neutral.png";
 });
+
 
 robot.addEventListener("click", e => {
     // return if next image is not ready
