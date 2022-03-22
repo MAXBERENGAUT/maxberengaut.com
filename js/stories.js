@@ -43,7 +43,6 @@ function drawSpirals(){
         spirals = shuffle(spirals);
 
         let spiral_count = randomInRange(1, spirals.length);
-        console.log(spiral_count);
         for(i=0; i < spiral_count; i++){
             bullet.appendChild(spirals[i].cloneNode())
         }

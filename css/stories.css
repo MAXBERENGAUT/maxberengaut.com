@@ -19,7 +19,9 @@ h1 {
   padding-top: 10px;
   font-size: 350%;
   line-height: 79px;
-  white-space: nowrap
+  white-space: nowrap;
+  z-index: 2;
+  position: relative;
 }
 
 section {
@@ -69,12 +71,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .bullet > img {
   position: absolute;
-  z-index: 2;
 }
 
 .line {
