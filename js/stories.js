@@ -35,7 +35,7 @@ function drawSpirals(){
     
     for (let name of spiral_names) {
         let img = document.createElement("img");
-        img.src = `./stories/spirals/${name}.png`;
+        img.src = `./images/spirals/${name}.png`;
         spirals.push(img);
     }
 
