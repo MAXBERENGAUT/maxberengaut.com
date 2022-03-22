@@ -88,7 +88,16 @@ a {
   top: -100px;
 }
 
-.icon {
+#dog {
+  mix-blend-mode: multiply;
+  position: fixed;
+  width: 2.25em;
+  height: 2.25em;
+  top: 3em;
+  right: 3em;
+}
+
+#return {
   mix-blend-mode: multiply;
   position: fixed;
   width: 2.25em;
