@@ -14,6 +14,10 @@ main {
   padding-top: 10em;
 }
 
+section:first-of-type::first-letter{
+  font-size: 600%;
+}
+
 h1 {
   font-family: 'Raleway', Verdana;
   padding-top: 10px;
