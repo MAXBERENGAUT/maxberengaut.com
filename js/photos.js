@@ -3,6 +3,7 @@
 
 var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/";
 var MAX_QUEUE_SIZE = 5;
+var ROBOT_RESET_MILLIS = 5000;
 
 //
 
@@ -165,6 +166,6 @@ robot.addEventListener("click", e => {
             queueNextImage();
         }, 0);
         // check to reset cursor and robot
-        setTimeout(updateRobot, 1000);
+        setTimeout(updateRobot, ROBOT_RESET_MILLIS);
     }
 });
