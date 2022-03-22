@@ -109,6 +109,7 @@ function generateEntries(){
 
 function initMarker(){
     marker.style.left = (navigation.getBoundingClientRect().right + 2 * marker.getBoundingClientRect().width) + "px";
+    marker.style.visibility = "visible";
     setInterval(updateMarker, 1000 / updates_per_second);
 }
 

@@ -55,6 +55,7 @@ h2, h4, figcaption {
 }
 
 #marker {
+    visibility: hidden;
     position: fixed;
     height: 10px;
     width: 10px;
