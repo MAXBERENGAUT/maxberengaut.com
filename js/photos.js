@@ -3,7 +3,7 @@
 
 var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/";
 var MAX_QUEUE_SIZE = 5;
-var ROBOT_RESET_MILLIS = 4500;
+var ROBOT_RESET_MILLIS = 6650;
 
 //
 
