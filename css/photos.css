@@ -119,6 +119,15 @@ form > button:focus, form > span:focus {
     animation: img-fade-in 1.5s forwards;
 }
 
+.toggle {
+    -webkit-animation: toggle 5s linear;
+    -moz-animation: toggle 5s linear;
+    -o-animation: toggle 5s linear;
+    -ms-animation: toggle 5s linear;
+    animation: toggle 5s linear;
+    animation: toggle 5s linear;
+}
+
 @-webkit-keyframes  fade-in { from { opacity: 0; } to { opacity: 1; }}
 @-moz-keyframes     fade-in { from { opacity: 0; } to { opacity: 1; }}
 @-o-keyframes       fade-in { from { opacity: 0; } to { opacity: 1; }}
@@ -130,3 +139,9 @@ form > button:focus, form > span:focus {
 @-o-keyframes       img-fade-in { from { opacity: 0; } to { opacity: 1; }}
 @-ms-keyframes      img-fade-in { from { opacity: 0; } to { opacity: 1; }}
 @keyframes          img-fade-in { from { opacity: 0; } to { opacity: 1; }}
+
+@-webkit-keyframes  toggle { 0%,15%,100% { opacity: 1 } 20%,90% { opacity: 0 }}
+@-moz-keyframes     toggle { 0%,15%,100% { opacity: 1 } 20%,90% { opacity: 0 }}
+@-o-keyframes       toggle { 0%,15%,100% { opacity: 1 } 20%,90% { opacity: 0 }}
+@-ms-keyframes      toggle { 0%,15%,100% { opacity: 1 } 20%,90% { opacity: 0 }}
+@keyframes          toggle { 0%,15%,100% { opacity: 1 } 20%,90% { opacity: 0 }}

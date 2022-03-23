@@ -3,7 +3,7 @@
 
 var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Photos/";
 var MAX_QUEUE_SIZE = 5;
-var ROBOT_RESET_MILLIS = 5000;
+var ROBOT_RESET_MILLIS = 4500;
 
 //
 
@@ -154,7 +154,6 @@ robot.addEventListener("click", e => {
 
     // reflect click in robot
     robot_clicked = true;
-    robot.style.cursor = "progress";
     robot.src = "./images/robot_clicked.png";
     
     if(keys.length == 0 && queue_index == img_queue.length){
@@ -165,7 +164,18 @@ robot.addEventListener("click", e => {
             swapImage();
             queueNextImage();
         }, 0);
+        
+        // reset cursor and trigger fade
+        robot.style.cursor = "default";
+        robot.classList.add("toggle");
+
         // check to reset cursor and robot
         setTimeout(updateRobot, ROBOT_RESET_MILLIS);
     }
+});
+
+
+robot.addEventListener("animationend", () => {
+    // reset class so animation can be replayed
+    robot.classList.remove("toggle");
 });
