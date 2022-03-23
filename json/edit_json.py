@@ -5,7 +5,7 @@ JSON_FILE_OUT = "./json/songs2.json"
 
 DATA_IN = {}
 
-with open(JSON_FILE_IN, 'r') as infile:
+with open(JSON_FILE_IN, 'r', encoding="utf8") as infile:
     DATA_IN = json.load(infile)
 
 ''' MANIPULATE HERE '''
@@ -13,12 +13,18 @@ with open(JSON_FILE_IN, 'r') as infile:
 DATA_OUT = []
 
 for k in DATA_IN:
-    styles = k["styles"]
-    del k["styles"]
-    k["lyric"] = ""
-    k["styles"] = styles
+    k["cover"] = k["rank"] + ".png"
 
-    DATA_OUT.append(k)
+    DATA_OUT.append({
+        "rank": k["rank"],
+        "cover": k["rank"] + ".png",
+        "title": k["title"],
+        "artist": k["artist"],
+        "year": k["year"],
+        "write_up": k["write_up"],
+        "lyric": k["lyric"],
+        "styles": k["styles"]
+    })
 
 
 ''' *************** '''

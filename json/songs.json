@@ -1,6 +1,7 @@
 [
   {
     "rank": "175",
+    "cover": "175.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -12,6 +13,7 @@
   },
   {
     "rank": "174",
+    "cover": "174.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -23,6 +25,7 @@
   },
   {
     "rank": "173",
+    "cover": "173.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -34,6 +37,7 @@
   },
   {
     "rank": "172",
+    "cover": "172.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -45,6 +49,7 @@
   },
   {
     "rank": "171",
+    "cover": "171.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -56,6 +61,7 @@
   },
   {
     "rank": "170",
+    "cover": "170.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -67,6 +73,7 @@
   },
   {
     "rank": "169",
+    "cover": "169.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -78,6 +85,7 @@
   },
   {
     "rank": "168",
+    "cover": "168.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -89,6 +97,7 @@
   },
   {
     "rank": "167",
+    "cover": "167.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -100,6 +109,7 @@
   },
   {
     "rank": "166",
+    "cover": "166.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -111,6 +121,7 @@
   },
   {
     "rank": "165",
+    "cover": "165.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -122,6 +133,7 @@
   },
   {
     "rank": "164",
+    "cover": "164.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -133,6 +145,7 @@
   },
   {
     "rank": "163",
+    "cover": "163.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -144,6 +157,7 @@
   },
   {
     "rank": "162",
+    "cover": "162.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -155,6 +169,7 @@
   },
   {
     "rank": "161",
+    "cover": "161.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -166,6 +181,7 @@
   },
   {
     "rank": "160",
+    "cover": "160.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -177,6 +193,7 @@
   },
   {
     "rank": "159",
+    "cover": "159.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -188,6 +205,7 @@
   },
   {
     "rank": "158",
+    "cover": "158.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -199,6 +217,7 @@
   },
   {
     "rank": "157",
+    "cover": "157.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -210,6 +229,7 @@
   },
   {
     "rank": "156",
+    "cover": "156.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -221,6 +241,7 @@
   },
   {
     "rank": "155",
+    "cover": "155.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -232,6 +253,7 @@
   },
   {
     "rank": "154",
+    "cover": "154.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -243,6 +265,7 @@
   },
   {
     "rank": "153",
+    "cover": "153.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -254,6 +277,7 @@
   },
   {
     "rank": "152",
+    "cover": "152.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -265,6 +289,7 @@
   },
   {
     "rank": "151",
+    "cover": "151.jpg",
     "title": "Title",
     "artist": "Artist",
     "year": "201X",
@@ -276,10 +301,11 @@
   },
   {
     "rank": "150",
+    "cover": "150.jpg",
     "title": "Avian",
     "artist": "Mac Miller",
     "year": "2013",
-    "write_up": "Mac Miller, through albums like Blue Side Park, Divine Feminine, and Swimming, proved himself to be a gifted rapper. He never wows at first hearing, but he is always able to fit seamlessly into the beat. On his best songs, he finds pockets of wisdom from the back of his mind, like in Avian, where he quips “TV Money / Dollar for sense of humor” and “Not into this conversation, I been in my head for hours, I’m out.” These lyrics perfectly encapstulate the (drug-related) feeling of wanting to escape our bodies:",
+    "write_up": "Mac Miller, through albums like Blue Side Park, Divine Feminine, and Swimming, proved himself to be a gifted rapper. He never wows at first hearing, but he is always able to fit seamlessly into the beat. On his best songs, he finds pockets of wisdom from the back of his mind, like in Avian, where he quips \u201cTV Money / Dollar for sense of humor\u201d and \u201cNot into this conversation, I been in my head for hours, I\u2019m out.\u201d These lyrics perfectly encapstulate the (drug-related) feeling of wanting to escape our bodies:",
     "lyric": "There's a bird in the sky / Look at him fly / Why, why, why, why, why",
     "styles": {
       "cover": "cover-right"
@@ -287,43 +313,47 @@
   },
   {
     "rank": "149",
+    "cover": "149.jpg",
     "title": "Blonde Blood",
     "artist": "Boyscott",
     "year": "2015",
-    "write_up": "Boyscott’s debut album is filled with warm, catchy surf-guitar licks. The songs carefully bend through subtle emotional dynamics, which the whispery soft vocals clearly echo, but what’s most impressive is how trivial, fun and easy they make it sound. ",
-    "lyric": "I might act like I’m an asshole / Mean guys always get close to you",
+    "write_up": "Boyscott\u2019s debut album is filled with warm, catchy surf-guitar licks. The songs carefully bend through subtle emotional dynamics, which the whispery soft vocals clearly echo, but what\u2019s most impressive is how trivial, fun and easy they make it sound. ",
+    "lyric": "I might act like I\u2019m an asshole / Mean guys always get close to you",
     "styles": {
       "cover": "cover-left"
     }
   },
   {
     "rank": "148",
+    "cover": "148.jpg",
     "title": "Skyfall (ft. Young Thug)",
     "artist": "Travis Scott",
     "year": "2014",
-    "write_up": "Travis Scott has built himself a formidable popular legacy over the course of the decade. He has never been an artistic innovator, borrowing from other artists and producers for the basis of his sound, but still, he created a distinctive style. His lyrics have never been strong, but his syrupy robotic vocals here soar through the bridges and at the end of the day, he comes close to Young Thug’s world, which is a credit to him, considering it’s his song.",
-    "lyric": "I’m it like a game that get played by a kid",
+    "write_up": "Travis Scott has built himself a formidable popular legacy over the course of the decade. He has never been an artistic innovator, borrowing from other artists and producers for the basis of his sound, but still, he created a distinctive style. His lyrics have never been strong, but his syrupy robotic vocals here soar through the bridges and at the end of the day, he comes close to Young Thug\u2019s world, which is a credit to him, considering it\u2019s his song.",
+    "lyric": "I\u2019m it like a game that get played by a kid",
     "styles": {
       "cover": "cover-right"
     }
   },
   {
     "rank": "147",
+    "cover": "147.jpg",
     "title": "The Knowing",
     "artist": "The Weeknd",
     "year": "2012",
-    "write_up": "Starting with a soft, melancholy Cocteau Twins sample, The Weeknd builds a sonic world through the expansiveness of his vocals. He isn’t as dynamic (or unintelligible) as Elizabeth Fraser, but he understands how to construct cascades of emotion, which swirl beneath him as he proudly rejects an ex-lover.",
-    "lyric": "You probably thought that you’d break my heart.",
+    "write_up": "Starting with a soft, melancholy Cocteau Twins sample, The Weeknd builds a sonic world through the expansiveness of his vocals. He isn\u2019t as dynamic (or unintelligible) as Elizabeth Fraser, but he understands how to construct cascades of emotion, which swirl beneath him as he proudly rejects an ex-lover.",
+    "lyric": "You probably thought that you\u2019d break my heart.",
     "styles": {
       "cover": "cover-left"
     }
   },
   {
     "rank": "146",
+    "cover": "146.jpg",
     "title": "On God",
     "artist": "Vonte",
     "year": "2019",
-    "write_up": "After the mainstream explosion in 2016, Soundcloud Rap went into hiding, slowly building itself back up again through Pluggnb, until rappers like Vonte, BoofPaxkMooky, 1600J, Tony Shhnow and 10KDunkin fully arrived, artistic hearts intact. Vonte’s innate stylistic reliance on heavy autotune takes some getting used to, but on songs like ‘On God’, he finds the hidden emotional pathos absent from much of mainstream rap, powered all the time by a brilliant, spectral beat. ",
+    "write_up": "After the mainstream explosion in 2016, Soundcloud Rap went into hiding, slowly building itself back up again through Pluggnb, until rappers like Vonte, BoofPaxkMooky, 1600J, Tony Shhnow and 10KDunkin fully arrived, artistic hearts intact. Vonte\u2019s innate stylistic reliance on heavy autotune takes some getting used to, but on songs like \u2018On God\u2019, he finds the hidden emotional pathos absent from much of mainstream rap, powered all the time by a brilliant, spectral beat. ",
     "lyric": "",
     "styles": {
       "cover": "cover-right"
@@ -331,21 +361,23 @@
   },
   {
     "rank": "145",
+    "cover": "145.jpg",
     "title": "Home",
     "artist": "LCD Soundsystem",
     "year": "2010",
-    "write_up": "LCD Soundsystem isn’t known for pop-gold through brevity, they find it instead through elongated philosophical meanderings, surrounded by straight-forward dance-influenced bass and drum lines, as well as small guitar licks. Home isn’t ‘All My Friends’, or ‘Someone Great’, but it finds a soft transcendence through reimagining the basics that made up those two gargantuan songs. Every component fits perfectly.",
-    "lyric": "And you stay home, and you better, ‘cause you’re afraid of what you are",
+    "write_up": "LCD Soundsystem isn\u2019t known for pop-gold through brevity, they find it instead through elongated philosophical meanderings, surrounded by straight-forward dance-influenced bass and drum lines, as well as small guitar licks. Home isn\u2019t \u2018All My Friends\u2019, or \u2018Someone Great\u2019, but it finds a soft transcendence through reimagining the basics that made up those two gargantuan songs. Every component fits perfectly.",
+    "lyric": "And you stay home, and you better, \u2018cause you\u2019re afraid of what you are",
     "styles": {
       "cover": "cover-left"
     }
   },
   {
     "rank": "144",
+    "cover": "144.jpg",
     "title": "Broke Boi",
     "artist": "Playboi Carti",
     "year": "2015",
-    "write_up": "MexikoDro is one of the most influential producers of the decade, and his sensibility is all over Broke Boi, which glides through glittery keys in the light of Carti’s incessant, reckless confidence. Carti’s flow here steals the show, his intonations making the most basic flexes memorable and irresistibly catchy.",
+    "write_up": "MexikoDro is one of the most influential producers of the decade, and his sensibility is all over Broke Boi, which glides through glittery keys in the light of Carti\u2019s incessant, reckless confidence. Carti\u2019s flow here steals the show, his intonations making the most basic flexes memorable and irresistibly catchy.",
     "lyric": "Audi, Beamer, Benz with the roof up",
     "styles": {
       "cover": "cover-right"
@@ -353,21 +385,23 @@
   },
   {
     "rank": "143",
+    "cover": "143.jpg",
     "title": "Tonya Harding (In D Major)",
     "artist": "Sufjan Stevens",
     "year": "2017",
-    "write_up": "Released around the same time as the movie, Sufjan Stevens uses his distinctive prosaic style with the simplicity and eloquence that his name became synonymous with in the wake of his fantastic past released like ‘Michigan’ and ‘Illinois’. Here, like he did in the past with John Wayne Gacy, he calmly talks face-to-face with a larger-than-life American cultural figure, implicitly challenging their standard negative moral connotation. ",
-    "lyric": "She took quite a beating, so you’re not above cheating",
+    "write_up": "Released around the same time as the movie, Sufjan Stevens uses his distinctive prosaic style with the simplicity and eloquence that his name became synonymous with in the wake of his fantastic past released like \u2018Michigan\u2019 and \u2018Illinois\u2019. Here, like he did in the past with John Wayne Gacy, he calmly talks face-to-face with a larger-than-life American cultural figure, implicitly challenging their standard negative moral connotation. ",
+    "lyric": "She took quite a beating, so you\u2019re not above cheating",
     "styles": {
       "cover": "cover-left"
     }
   },
   {
     "rank": "142",
+    "cover": "142.jpg",
     "title": "Say To You",
     "artist": "STRFKR",
     "year": "2013",
-    "write_up": "STRFKR are one of the happiest, most bountifully creative groups of the decade. They’re not particularly substantive, but they have a knack for melodies, which come through the emotionally searing vocals and electronic peripheries of ‘Say to You’. Emotions ae hard to come by in our current day and age. STRFKR lets you arrive to them without any overly-sentimental baggage.",
+    "write_up": "STRFKR are one of the happiest, most bountifully creative groups of the decade. They\u2019re not particularly substantive, but they have a knack for melodies, which come through the emotionally searing vocals and electronic peripheries of \u2018Say to You\u2019. Emotions ae hard to come by in our current day and age. STRFKR lets you arrive to them without any overly-sentimental baggage.",
     "lyric": "",
     "styles": {
       "cover": "cover-right"
@@ -375,10 +409,11 @@
   },
   {
     "rank": "141",
+    "cover": "141.jpg",
     "title": "Harps",
     "artist": "The Sea and the Cake",
     "year": "2012",
-    "write_up": "While their most important music is in their first three projects, the Sea and Cake are one of the most consistently creative indie bands for a reason. Harps starts off at a snail’s pace, but it provides the room for one stunningly clean guitar crescendo. Like their 1997 slow-build epic, ‘The Argument’, the Sea and Cake defy the familiar trappings of indie pop by hiding their gold from sight at first glance. ",
+    "write_up": "While their most important music is in their first three projects, the Sea and Cake are one of the most consistently creative indie bands for a reason. Harps starts off at a snail\u2019s pace, but it provides the room for one stunningly clean guitar crescendo. Like their 1997 slow-build epic, \u2018The Argument\u2019, the Sea and Cake defy the familiar trappings of indie pop by hiding their gold from sight at first glance. ",
     "lyric": "",
     "styles": {
       "cover": "cover-left"
@@ -386,6 +421,7 @@
   },
   {
     "rank": "140",
+    "cover": "140.jpg",
     "title": "Property Brothers",
     "artist": "Fox Academy",
     "year": "2019",
@@ -397,6 +433,7 @@
   },
   {
     "rank": "139",
+    "cover": "139.jpg",
     "title": "It's Late",
     "artist": "A Beacon School",
     "year": "2019",
@@ -408,6 +445,7 @@
   },
   {
     "rank": "138",
+    "cover": "138.jpg",
     "title": "Neighborhood Hero",
     "artist": "Lil Durk",
     "year": "2018",
@@ -419,6 +457,7 @@
   },
   {
     "rank": "137",
+    "cover": "137.jpg",
     "title": "Rip Van Winkle",
     "artist": "Shannon & the Clams",
     "year": "2013",
@@ -430,6 +469,7 @@
   },
   {
     "rank": "136",
+    "cover": "136.jpg",
     "title": "Wassup (ft. UnoTheActivist)",
     "artist": "Larry League",
     "year": "2013",
@@ -441,6 +481,7 @@
   },
   {
     "rank": "135",
+    "cover": "135.jpg",
     "title": "Nike Just Do It",
     "artist": "Bladee",
     "year": "2018",
@@ -452,6 +493,7 @@
   },
   {
     "rank": "134",
+    "cover": "134.jpg",
     "title": "Self Control",
     "artist": "Frank Ocean",
     "year": "2016",
@@ -463,6 +505,7 @@
   },
   {
     "rank": "133",
+    "cover": "133.jpg",
     "title": "Lil Haiti Baby",
     "artist": "Future",
     "year": "2015",
@@ -474,6 +517,7 @@
   },
   {
     "rank": "132",
+    "cover": "132.jpg",
     "title": "Smoke Again (ft. Ab-Soul)",
     "artist": "Chance the Rapper",
     "year": "2013",
@@ -485,6 +529,7 @@
   },
   {
     "rank": "131",
+    "cover": "131.jpg",
     "title": "Soft Shape",
     "artist": "Empath",
     "year": "2019",
@@ -496,6 +541,7 @@
   },
   {
     "rank": "130",
+    "cover": "130.jpg",
     "title": "I Can Drive",
     "artist": "Lil Uzi Vert",
     "year": "2016",
@@ -507,6 +553,7 @@
   },
   {
     "rank": "129",
+    "cover": "129.jpg",
     "title": "Set Dat Bitch Off (Remix)",
     "artist": "A$AP Ant",
     "year": "2016",
@@ -518,6 +565,7 @@
   },
   {
     "rank": "128",
+    "cover": "128.jpg",
     "title": "Drunk Drivers / Killer Whales",
     "artist": "Car Seat Headrest",
     "year": "2016",
@@ -529,6 +577,7 @@
   },
   {
     "rank": "127",
+    "cover": "127.jpg",
     "title": "Tendencies",
     "artist": "D. Savage",
     "year": "2016",
@@ -540,6 +589,7 @@
   },
   {
     "rank": "126",
+    "cover": "126.jpg",
     "title": "All Day",
     "artist": "Q Da Fool",
     "year": "2018",
@@ -551,6 +601,7 @@
   },
   {
     "rank": "125",
+    "cover": "125.jpg",
     "title": "Haunt Me (x3)",
     "artist": "Teen Suicide",
     "year": "2013",
@@ -562,6 +613,7 @@
   },
   {
     "rank": "124",
+    "cover": "124.jpg",
     "title": "Drunk Drivers / Killer Whales",
     "artist": "Car Seat Headrest",
     "year": "2016",
@@ -573,6 +625,7 @@
   },
   {
     "rank": "123",
+    "cover": "123.jpg",
     "title": "Erosion",
     "artist": "The Greys",
     "year": "2013",
@@ -584,6 +637,7 @@
   },
   {
     "rank": "122",
+    "cover": "122.jpg",
     "title": "Faucet",
     "artist": "Earl Sweatshirt",
     "year": "2015",
@@ -595,6 +649,7 @@
   },
   {
     "rank": "121",
+    "cover": "121.jpg",
     "title": "Everywhere I Go",
     "artist": "BabyxSosa",
     "year": "2019",
@@ -606,6 +661,7 @@
   },
   {
     "rank": "120",
+    "cover": "120.jpg",
     "title": "Salt",
     "artist": "Alex G",
     "year": "2015",
@@ -617,6 +673,7 @@
   },
   {
     "rank": "119",
+    "cover": "119.jpg",
     "title": "Florida",
     "artist": "Funeral Suits",
     "year": "2012",
@@ -628,6 +685,7 @@
   },
   {
     "rank": "118",
+    "cover": "118.jpg",
     "title": "Continental Shelf",
     "artist": "Preoccupations",
     "year": "2015",
@@ -639,6 +697,7 @@
   },
   {
     "rank": "117",
+    "cover": "117.jpg",
     "title": "Brand New",
     "artist": "Yung Bans",
     "year": "2017",
@@ -650,6 +709,7 @@
   },
   {
     "rank": "116",
+    "cover": "116.jpg",
     "title": "Lance Jr.",
     "artist": "Courtney Barnett",
     "year": "2012",
@@ -661,6 +721,7 @@
   },
   {
     "rank": "115",
+    "cover": "115.jpg",
     "title": "Ashley Olsen",
     "artist": "Danger Incorporated",
     "year": "2017",
@@ -672,6 +733,7 @@
   },
   {
     "rank": "114",
+    "cover": "114.jpg",
     "title": "Yah Mean",
     "artist": "Playboi Carti",
     "year": "2017",
@@ -683,6 +745,7 @@
   },
   {
     "rank": "113",
+    "cover": "113.jpg",
     "title": "Purple Swag",
     "artist": "A$AP Rocky",
     "year": "2011",
@@ -694,6 +757,7 @@
   },
   {
     "rank": "112",
+    "cover": "112.jpg",
     "title": "Peach Boy",
     "artist": "Jay Som",
     "year": "2016",
@@ -705,6 +769,7 @@
   },
   {
     "rank": "111",
+    "cover": "111.jpg",
     "title": "Devon",
     "artist": "Grimes",
     "year": "2010",
@@ -716,6 +781,7 @@
   },
   {
     "rank": "110",
+    "cover": "110.jpg",
     "title": "Oh My Goodness",
     "artist": "Chief Keef",
     "year": "2014",
@@ -727,6 +793,7 @@
   },
   {
     "rank": "109",
+    "cover": "109.jpg",
     "title": "Giving Up The Gun",
     "artist": "Vampire Weekend",
     "year": "2010",
@@ -738,6 +805,7 @@
   },
   {
     "rank": "108",
+    "cover": "108.jpg",
     "title": "I'll Tell You What",
     "artist": "Young Thug",
     "year": "2015",
@@ -749,6 +817,7 @@
   },
   {
     "rank": "107",
+    "cover": "107.jpg",
     "title": "Ode to Boy [Demo]",
     "artist": "Sorry",
     "year": "2017",
@@ -760,6 +829,7 @@
   },
   {
     "rank": "106",
+    "cover": "106.jpg",
     "title": "Avila",
     "artist": "Nuuro/Arca",
     "year": "2011",
@@ -771,6 +841,7 @@
   },
   {
     "rank": "105",
+    "cover": "105.jpg",
     "title": "Uncast Shadow of a Southern Myth",
     "artist": "Parquet Courts",
     "year": "2014",
@@ -782,6 +853,7 @@
   },
   {
     "rank": "104",
+    "cover": "104.jpg",
     "title": "Last Girl",
     "artist": "Soccer Mommy",
     "year": "2018",
@@ -793,6 +865,7 @@
   },
   {
     "rank": "103",
+    "cover": "103.jpg",
     "title": "29 #Strafford APTS",
     "artist": "Bon Iver",
     "year": "2016",
@@ -804,6 +877,7 @@
   },
   {
     "rank": "102",
+    "cover": "102.jpg",
     "title": "It's Real",
     "artist": "Real Estate",
     "year": "2011",
@@ -815,6 +889,7 @@
   },
   {
     "rank": "101",
+    "cover": "101.jpg",
     "title": "Cellophane",
     "artist": "FKA Twigs",
     "year": "2019",
@@ -826,6 +901,7 @@
   },
   {
     "rank": "100",
+    "cover": "100.jpg",
     "title": "Future Me Hates Me",
     "artist": "The Beths",
     "year": "2018",
@@ -837,6 +913,7 @@
   },
   {
     "rank": "99",
+    "cover": "99.jpg",
     "title": "Tity and Dolla (ft. Hugh Augustine and Jay Rock)",
     "artist": "Isaiah Rashad",
     "year": "2016",
@@ -848,6 +925,7 @@
   },
   {
     "rank": "98",
+    "cover": "98.jpg",
     "title": "Headlines",
     "artist": "Drake",
     "year": "2011",
@@ -859,6 +937,7 @@
   },
   {
     "rank": "97",
+    "cover": "97.jpg",
     "title": "Baby (ft. Ecco2k)",
     "artist": "Thaiboy Digital",
     "year": "2019",
@@ -870,6 +949,7 @@
   },
   {
     "rank": "96",
+    "cover": "96.jpg",
     "title": "I Like That You Can See It",
     "artist": "Girlpool",
     "year": "2015",
@@ -881,6 +961,7 @@
   },
   {
     "rank": "95",
+    "cover": "95.jpg",
     "title": "Hallucinating",
     "artist": "Future",
     "year": "2017",
@@ -892,6 +973,7 @@
   },
   {
     "rank": "94",
+    "cover": "94.jpg",
     "title": "Buffed Sky",
     "artist": "Archy Marshall",
     "year": "2015",
@@ -903,6 +985,7 @@
   },
   {
     "rank": "93",
+    "cover": "93.jpg",
     "title": "My Flaws Burn Through My Skin Like Demonic Flames From Hell",
     "artist": "$ucidieboy$",
     "year": "2015",
@@ -914,6 +997,7 @@
   },
   {
     "rank": "92",
+    "cover": "92.jpg",
     "title": "10 Mile Stereo",
     "artist": "Beach House",
     "year": "2010",
@@ -925,6 +1009,7 @@
   },
   {
     "rank": "91",
+    "cover": "91.jpg",
     "title": "Mazi Love",
     "artist": "6 Dogs",
     "year": "2017",
@@ -936,6 +1021,7 @@
   },
   {
     "rank": "90",
+    "cover": "90.jpg",
     "title": "SMUCKERS (ft. Kanye West and Lil Wayne)",
     "artist": "Tyler, the Creator",
     "year": "2015",
@@ -947,6 +1033,7 @@
   },
   {
     "rank": "89",
+    "cover": "89.jpg",
     "title": "I Bet On Losing Dogs",
     "artist": "Mitski",
     "year": "2016",
@@ -958,6 +1045,7 @@
   },
   {
     "rank": "88",
+    "cover": "88.jpg",
     "title": "Trap Money Benny",
     "artist": "Yung Gleesh",
     "year": "2014",
@@ -969,6 +1057,7 @@
   },
   {
     "rank": "87",
+    "cover": "87.jpg",
     "title": "Buss It",
     "artist": "Bear1Boss",
     "year": "2018",
@@ -980,6 +1069,7 @@
   },
   {
     "rank": "86",
+    "cover": "86.jpg",
     "title": "No",
     "artist": "Nicholas Jaar",
     "year": "2016",
@@ -991,6 +1081,7 @@
   },
   {
     "rank": "85",
+    "cover": "85.jpg",
     "title": "Dad",
     "artist": "Duwap Kaine",
     "year": "2018",
@@ -1002,6 +1093,7 @@
   },
   {
     "rank": "84",
+    "cover": "84.jpg",
     "title": "Freestyle",
     "artist": "Young Thug, Rich Homie Quan",
     "year": "2014",
@@ -1013,6 +1105,7 @@
   },
   {
     "rank": "83",
+    "cover": "83.jpg",
     "title": "Phone",
     "artist": "Rico Nasty",
     "year": "2017",
@@ -1024,6 +1117,7 @@
   },
   {
     "rank": "82",
+    "cover": "82.jpg",
     "title": "Hood Politics",
     "artist": "Kendrick Lamar",
     "year": "2015",
@@ -1035,6 +1129,7 @@
   },
   {
     "rank": "81",
+    "cover": "81.jpg",
     "title": "Souljahwitch's Faith",
     "artist": "Lil Tracy",
     "year": "2016",
@@ -1046,6 +1141,7 @@
   },
   {
     "rank": "80",
+    "cover": "80.jpg",
     "title": "Masterpiece",
     "artist": "Big Thief",
     "year": "2016",
@@ -1057,6 +1153,7 @@
   },
   {
     "rank": "79",
+    "cover": "79.jpg",
     "title": "Baby What's Wrong With You",
     "artist": "Chief Keef",
     "year": "2013",
@@ -1068,6 +1165,7 @@
   },
   {
     "rank": "78",
+    "cover": "78.jpg",
     "title": "French Press",
     "artist": "Rolling Blackouts Coastal Fever",
     "year": "2017",
@@ -1079,6 +1177,7 @@
   },
   {
     "rank": "77",
+    "cover": "77.jpg",
     "title": "1539 N. Calvert",
     "artist": "JPEGMAFIA",
     "year": "2018",
@@ -1090,6 +1189,7 @@
   },
   {
     "rank": "76",
+    "cover": "76.jpg",
     "title": "Yeah Yeah",
     "artist": "Young Nudy",
     "year": "2017",
@@ -1101,6 +1201,7 @@
   },
   {
     "rank": "75",
+    "cover": "75.jpg",
     "title": "Super Rich Kids (ft. Earl Sweatshirt)",
     "artist": "Frank Ocean",
     "year": "2012",
@@ -1112,6 +1213,7 @@
   },
   {
     "rank": "74",
+    "cover": "74.jpg",
     "title": "Thoughts on Love and Work",
     "artist": "Kilo Kish",
     "year": "2014",
@@ -1123,6 +1225,7 @@
   },
   {
     "rank": "73",
+    "cover": "73.jpg",
     "title": "Birth In Reverse",
     "artist": "St. Vincent",
     "year": "2014",
@@ -1134,6 +1237,7 @@
   },
   {
     "rank": "72",
+    "cover": "72.jpg",
     "title": "2 Cups Stuffed",
     "artist": "Young Thug",
     "year": "2013",
@@ -1145,6 +1249,7 @@
   },
   {
     "rank": "71",
+    "cover": "71.jpg",
     "title": "Transitional Bird (Clever Girl)",
     "artist": "Candy Claws",
     "year": "2013",
@@ -1156,6 +1261,7 @@
   },
   {
     "rank": "70",
+    "cover": "70.jpg",
     "title": "Feelin' the Love",
     "artist": "Vince Staples",
     "year": "2014",
@@ -1167,6 +1273,7 @@
   },
   {
     "rank": "69",
+    "cover": "69.jpg",
     "title": "Rugged Country",
     "artist": "Japanese Breakfast",
     "year": "2016",
@@ -1178,6 +1285,7 @@
   },
   {
     "rank": "68",
+    "cover": "68.jpg",
     "title": "Lit Like Bic",
     "artist": "Rae Sremmud",
     "year": "2015",
@@ -1189,6 +1297,7 @@
   },
   {
     "rank": "67",
+    "cover": "67.jpg",
     "title": "Gentleman",
     "artist": "SL",
     "year": "2017",
@@ -1200,6 +1309,7 @@
   },
   {
     "rank": "66",
+    "cover": "66.jpg",
     "title": "Ones Who Love You",
     "artist": "Alvvays",
     "year": "2014",
@@ -1211,6 +1321,7 @@
   },
   {
     "rank": "65",
+    "cover": "65.jpg",
     "title": "WokeUpLikeThis (ft. Lil Uzi Vert)",
     "artist": "Playboi Carti",
     "year": "2017",
@@ -1222,6 +1333,7 @@
   },
   {
     "rank": "64",
+    "cover": "64.jpg",
     "title": "Bleach",
     "artist": "Bladee, Ecco2k",
     "year": "2013",
@@ -1233,6 +1345,7 @@
   },
   {
     "rank": "63",
+    "cover": "63.jpg",
     "title": "Identikit",
     "artist": "Radiohead",
     "year": "2016",
@@ -1244,6 +1357,7 @@
   },
   {
     "rank": "62",
+    "cover": "62.jpg",
     "title": "Ready to Start",
     "artist": "Arcade Fire",
     "year": "2010",
@@ -1255,6 +1369,7 @@
   },
   {
     "rank": "61",
+    "cover": "61.jpg",
     "title": "I JU$T WANN4 BE YO6R FRIEND",
     "artist": "Kreayshawn",
     "year": "2010",
@@ -1266,6 +1381,7 @@
   },
   {
     "rank": "60",
+    "cover": "60.jpg",
     "title": "White Girl",
     "artist": "Shy Glizzy",
     "year": "2014",
@@ -1277,6 +1393,7 @@
   },
   {
     "rank": "59",
+    "cover": "59.jpg",
     "title": "Obvs",
     "artist": "Jamie XX",
     "year": "2015",
@@ -1288,6 +1405,7 @@
   },
   {
     "rank": "58",
+    "cover": "58.jpg",
     "title": "Skrt",
     "artist": "Kodak Black",
     "year": "2015",
@@ -1299,6 +1417,7 @@
   },
   {
     "rank": "57",
+    "cover": "57.jpg",
     "title": "A Token of Gratitude",
     "artist": "The Radio Dept.",
     "year": "2010",
@@ -1310,6 +1429,7 @@
   },
   {
     "rank": "56",
+    "cover": "56.jpg",
     "title": "Raw (Might Just)",
     "artist": "Young Thug",
     "year": "2015",
@@ -1321,6 +1441,7 @@
   },
   {
     "rank": "55",
+    "cover": "55.jpg",
     "title": "Chasing Shadows",
     "artist": "Santigold",
     "year": "2016",
@@ -1332,6 +1453,7 @@
   },
   {
     "rank": "54",
+    "cover": "54.jpg",
     "title": "He Would Have Laughed",
     "artist": "Deerhunter",
     "year": "2010",
@@ -1343,6 +1465,7 @@
   },
   {
     "rank": "53",
+    "cover": "53.jpg",
     "title": "Queen Black Acid",
     "artist": "Menomena",
     "year": "2010",
@@ -1354,6 +1477,7 @@
   },
   {
     "rank": "52",
+    "cover": "52.jpg",
     "title": "Slomo",
     "artist": "Slowdive",
     "year": "2017",
@@ -1365,6 +1489,7 @@
   },
   {
     "rank": "51",
+    "cover": "51.jpg",
     "title": "Size of the Moon",
     "artist": "Pinegrove",
     "year": "2016",
@@ -1376,6 +1501,7 @@
   },
   {
     "rank": "50",
+    "cover": "50.jpg",
     "title": "Pussy Weed Beer",
     "artist": "Chastity Belt",
     "year": "2015",
@@ -1387,6 +1513,7 @@
   },
   {
     "rank": "49",
+    "cover": "49.jpg",
     "title": "Lost",
     "artist": "Danny Brown",
     "year": "2016",
@@ -1398,6 +1525,7 @@
   },
   {
     "rank": "48",
+    "cover": "48.jpg",
     "title": "NuYork Nights at 21",
     "artist": "Lil Uzi Vert",
     "year": "2016",
@@ -1409,6 +1537,7 @@
   },
   {
     "rank": "47",
+    "cover": "47.jpg",
     "title": "Depreston",
     "artist": "Courtney Barnett",
     "year": "2015",
@@ -1420,6 +1549,7 @@
   },
   {
     "rank": "46",
+    "cover": "46.jpg",
     "title": "Purple Reign",
     "artist": "Future",
     "year": "2016",
@@ -1431,6 +1561,7 @@
   },
   {
     "rank": "45",
+    "cover": "45.jpg",
     "title": "Stuck in the Changer",
     "artist": "No Age",
     "year": "2018",
@@ -1442,6 +1573,7 @@
   },
   {
     "rank": "44",
+    "cover": "44.jpg",
     "title": "Fall Off",
     "artist": "03 Greedo",
     "year": "2018",
@@ -1453,6 +1585,7 @@
   },
   {
     "rank": "43",
+    "cover": "43.jpg",
     "title": "Race",
     "artist": "Alex G",
     "year": "2010",
@@ -1464,6 +1597,7 @@
   },
   {
     "rank": "42",
+    "cover": "42.jpg",
     "title": "M.A.A.D City",
     "artist": "Kendrick Lamar",
     "year": "2012",
@@ -1475,6 +1609,7 @@
   },
   {
     "rank": "41",
+    "cover": "41.jpg",
     "title": "Kill For Love",
     "artist": "Chromatics",
     "year": "2012",
@@ -1486,6 +1621,7 @@
   },
   {
     "rank": "40",
+    "cover": "40.jpg",
     "title": "White Tee",
     "artist": "Lil Tracy, Lil Peep",
     "year": "2016",
@@ -1497,6 +1633,7 @@
   },
   {
     "rank": "39",
+    "cover": "39.jpg",
     "title": "Woah Woah Woah (ft. Bali Baby)",
     "artist": "Trippie Redd",
     "year": "2018",
@@ -1508,6 +1645,7 @@
   },
   {
     "rank": "38",
+    "cover": "38.jpg",
     "title": "Rawlings",
     "artist": "Chief Keef",
     "year": "2018",
@@ -1519,6 +1657,7 @@
   },
   {
     "rank": "37",
+    "cover": "37.jpg",
     "title": "Devil in a New Dress (ft. Rick Ross)",
     "artist": "Kanye West",
     "year": "2010",
@@ -1530,6 +1669,7 @@
   },
   {
     "rank": "36",
+    "cover": "36.jpg",
     "title": "SomebodyPlease/Armour/Hunger",
     "artist": "MIKE",
     "year": "2017",
@@ -1541,6 +1681,7 @@
   },
   {
     "rank": "35",
+    "cover": "35.jpg",
     "title": "Quand Vas Tu Rentrer",
     "artist": "Melody's Echo Chamber",
     "year": "2012",
@@ -1552,6 +1693,7 @@
   },
   {
     "rank": "34",
+    "cover": "34.jpg",
     "title": "No Shoes On The Rug, Leave Them At The Door",
     "artist": "IDK",
     "year": "2017",
@@ -1563,6 +1705,7 @@
   },
   {
     "rank": "33",
+    "cover": "33.jpg",
     "title": "Who Goes There",
     "artist": "Bladee",
     "year": "2015",
@@ -1574,6 +1717,7 @@
   },
   {
     "rank": "32",
+    "cover": "32.jpg",
     "title": "Rill Rill",
     "artist": "Sleigh Bells",
     "year": "2010",
@@ -1585,6 +1729,7 @@
   },
   {
     "rank": "31",
+    "cover": "31.jpg",
     "title": "Young Ni**a Living",
     "artist": "A$AP MOB",
     "year": "2016",
@@ -1596,6 +1741,7 @@
   },
   {
     "rank": "30",
+    "cover": "30.jpg",
     "title": "Is It Cold In The Water?",
     "artist": "SOPHIE",
     "year": "2018",
@@ -1607,6 +1753,7 @@
   },
   {
     "rank": "29",
+    "cover": "29.jpg",
     "title": "Out Da Bowl (ft. Key)",
     "artist": "21 Savage",
     "year": "2015",
@@ -1618,6 +1765,7 @@
   },
   {
     "rank": "28",
+    "cover": "28.jpg",
     "title": "Wind In My Sails",
     "artist": "Earl Sweatshirt",
     "year": "2016",
@@ -1629,6 +1777,7 @@
   },
   {
     "rank": "27",
+    "cover": "27.jpg",
     "title": "Book of Revelation",
     "artist": "The Drums",
     "year": "2010",
@@ -1640,6 +1789,7 @@
   },
   {
     "rank": "26",
+    "cover": "26.jpg",
     "title": "Television",
     "artist": "Forth Wanderers",
     "year": "2015",
@@ -1651,6 +1801,7 @@
   },
   {
     "rank": "25",
+    "cover": "25.jpg",
     "title": "The Socialites",
     "artist": "Dirty Projectors",
     "year": "2012",
@@ -1662,6 +1813,7 @@
   },
   {
     "rank": "24",
+    "cover": "24.jpg",
     "title": "Baseball Cards",
     "artist": "Wavves",
     "year": "2010",
@@ -1673,6 +1825,7 @@
   },
   {
     "rank": "23",
+    "cover": "23.jpg",
     "title": "Check",
     "artist": "Young Thug",
     "year": "2015",
@@ -1684,6 +1837,7 @@
   },
   {
     "rank": "22",
+    "cover": "22.jpg",
     "title": "Vietnam",
     "artist": "Crystal Castles",
     "year": "2010",
@@ -1695,6 +1849,7 @@
   },
   {
     "rank": "21",
+    "cover": "21.jpg",
     "title": "Emergency Blimp",
     "artist": "King Krule",
     "year": "2017",
@@ -1706,6 +1861,7 @@
   },
   {
     "rank": "20",
+    "cover": "20.jpg",
     "title": "Bored Games",
     "artist": "Wild Nothing",
     "year": "2010",
@@ -1717,6 +1873,7 @@
   },
   {
     "rank": "19",
+    "cover": "19.jpg",
     "title": "Too Dark",
     "artist": "Frankie Cosmos",
     "year": "2016",
@@ -1728,6 +1885,7 @@
   },
   {
     "rank": "18",
+    "cover": "18.jpg",
     "title": "Mirage",
     "artist": "Ecco2k",
     "year": "2014",
@@ -1739,6 +1897,7 @@
   },
   {
     "rank": "17",
+    "cover": "17.jpg",
     "title": "Habit",
     "artist": "Snail Mail",
     "year": "2014",
@@ -1750,6 +1909,7 @@
   },
   {
     "rank": "16",
+    "cover": "16.jpg",
     "title": "Citgo",
     "artist": "Chief Keef",
     "year": "2012",
@@ -1761,6 +1921,7 @@
   },
   {
     "rank": "15",
+    "cover": "15.jpg",
     "title": "Mythological Beauty",
     "artist": "Big Thief",
     "year": "2017",
@@ -1772,6 +1933,7 @@
   },
   {
     "rank": "14",
+    "cover": "14.jpg",
     "title": "Oblivion",
     "artist": "Grimes",
     "year": "2012",
@@ -1783,6 +1945,7 @@
   },
   {
     "rank": "13",
+    "cover": "13.jpg",
     "title": "Like Dat",
     "artist": "Kodak Black",
     "year": "2016",
@@ -1794,6 +1957,7 @@
   },
   {
     "rank": "12",
+    "cover": "12.jpg",
     "title": "Daddy's Birthday",
     "artist": "Young Thug",
     "year": "2017",
@@ -1805,6 +1969,7 @@
   },
   {
     "rank": "11",
+    "cover": "11.jpg",
     "title": "Levitation",
     "artist": "Beach House",
     "year": "2015",
@@ -1816,6 +1981,7 @@
   },
   {
     "rank": "10",
+    "cover": "10.jpg",
     "title": "Throw Away",
     "artist": "Future",
     "year": "2015",
@@ -1827,6 +1993,7 @@
   },
   {
     "rank": "9",
+    "cover": "9.jpg",
     "title": "Ribs",
     "artist": "Lorde",
     "year": "2013",
@@ -1838,6 +2005,7 @@
   },
   {
     "rank": "8",
+    "cover": "8.jpg",
     "title": "Came Out Of a Lady",
     "artist": "Rubblebucket",
     "year": "2010",
@@ -1849,6 +2017,7 @@
   },
   {
     "rank": "7",
+    "cover": "7.jpg",
     "title": "Grab The Wheel",
     "artist": "Lil Uzi Vert",
     "year": "2016",
@@ -1860,6 +2029,7 @@
   },
   {
     "rank": "6",
+    "cover": "6.jpg",
     "title": "Nikes",
     "artist": "Frank Ocean",
     "year": "2016",
@@ -1871,6 +2041,7 @@
   },
   {
     "rank": "5",
+    "cover": "5.jpg",
     "title": "Iced Out Castles",
     "artist": "Black Kray (Sickboyrari)",
     "year": "2013",
@@ -1882,6 +2053,7 @@
   },
   {
     "rank": "4",
+    "cover": "4.jpg",
     "title": "On The Sea",
     "artist": "Beach House",
     "year": "2012",
@@ -1893,6 +2065,7 @@
   },
   {
     "rank": "3",
+    "cover": "3.jpg",
     "title": "Diplomat's Son",
     "artist": "Vampire Weekend",
     "year": "2010",
@@ -1904,6 +2077,7 @@
   },
   {
     "rank": "2",
+    "cover": "2.jpg",
     "title": "Riri ",
     "artist": "Young Thug",
     "year": "2016",
@@ -1915,6 +2089,7 @@
   },
   {
     "rank": "1",
+    "cover": "1.jpg",
     "title": "Hold My Liquor",
     "artist": "Kanye West",
     "year": "2013",

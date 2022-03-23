@@ -51,7 +51,7 @@ function generateEntries(){
         rank.classList.add("number")
 
         let cover = document.createElement("img");
-        cover.src = IMG_URL_BASE + (songs.length - i) + ".jpg";
+        cover.src = IMG_URL_BASE + entry["cover"];
 
         let header = document.createElement("h2");
         header.innerHTML = `${entry["artist"]}: "${entry["title"]}" (${entry["year"]})`;
