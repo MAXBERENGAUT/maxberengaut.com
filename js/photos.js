@@ -16,7 +16,7 @@ var robot_hovered = false;
 var robot_clicked = false;
 
 // load locations from json
-var locations = getJSON("./json/locations.json")
+var locations = getJSON("./json/locations.json");
 var keys = shuffle(Object.keys(locations));
 
 var queue_index = 0;
@@ -32,20 +32,20 @@ function init(){
     let key = keys.pop();
     img.src = IMG_URL_BASE + key;
 
-    img.onload = e => {
+    img.onload = () => {
         imgOnLoad();
 
         // load other robot faces
         var robot_faces = [new Image(), new Image()];
-        robot_faces[0].src = "./images/robot_hovered.png"
-        robot_faces[1].src = "./images/robot_clicked.png"
+        robot_faces[0].src = "./images/robot_hovered.png";
+        robot_faces[1].src = "./images/robot_clicked.png";
     }
 }
 
 
 // via https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
   
     // While there remain elements to shuffle...
     while (currentIndex != 0) {
