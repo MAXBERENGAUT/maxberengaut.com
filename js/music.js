@@ -3,7 +3,8 @@
 
 const updates_per_second = 60;
 
-var IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Covers/"
+const IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Covers/"
+const SONGS_URL = "./json/songs.json"
 
 //
 
@@ -14,7 +15,7 @@ var playlists = document.getElementById("playlists");
 var playlists_trigger = document.getElementById("playlists-trigger");
 
 // load songs from json
-var songs = getJSON("./json/songs.json")
+var songs = getJSON(SONGS_URL)
 
 generateEntries();
 initMarker();
