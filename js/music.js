@@ -3,7 +3,7 @@
 
 const updates_per_second = 60;
 
-const IMG_URL_BASE = "https://ik.imagekit.io/maxberengaut/Covers/"
+const IMG_URL_BASE = "https://ik.imagekit.io/maxberengautsites/maxberengaut_com/list_photos/"
 const SONGS_URL = "./json/songs.json"
 
 //
