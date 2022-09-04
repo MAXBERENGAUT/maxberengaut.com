@@ -33,7 +33,8 @@ section {
 }
 
 section::first-letter {
-  font-size: 400%
+  font-size: 400%;
+  padding-right: 2px;
 }
 
 p {
