@@ -1,9 +1,11 @@
-
 var spiral_names = ['i0', 'i1', 'i2', 'i3', 'o0', 'o1', 'o2', 'o3', 'o5']
 var bullets = document.getElementsByClassName("bullet");
 
-drawSpirals();
+var wide_letters = 'AKLRX';
+var sections = document.getElementsByTagName('section');
 
+drawSpirals();
+padWideFirstLetters();
 
 function randomInRange(n, m){
     return n + Math.floor(Math.random() * (m - n));
@@ -45,6 +47,20 @@ function drawSpirals(){
         let spiral_count = randomInRange(1, spirals.length);
         for(i=0; i < spiral_count; i++){
             bullet.appendChild(spirals[i].cloneNode())
+        }
+    }
+}
+
+
+function padWideFirstLetters() {
+    for (let section of sections){
+        if (section.children.length < 1) continue;
+
+        let p = section.children[0]
+        console.log(section.children[0].textContent)
+
+        if (wide_letters.includes(p.textContent.charAt(0))){
+            p.classList.add('wide-first');
         }
     }
 }

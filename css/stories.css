@@ -34,6 +34,10 @@ section {
 
 section::first-letter {
   font-size: 400%;
+}
+
+.wide-first::first-letter {
+  font-size: 400%;
   padding-right: 2px;
 }
 
