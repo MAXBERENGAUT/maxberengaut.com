@@ -1,1 +1,0 @@
-This directory is hidden by the root .htaccess file
