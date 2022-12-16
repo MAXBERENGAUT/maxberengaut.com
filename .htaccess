@@ -7,3 +7,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# hides stories direcory
+RedirectMatch 404 /\stories
