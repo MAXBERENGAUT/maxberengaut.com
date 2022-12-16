@@ -20,8 +20,10 @@
 
     <!-- DEVELOPMENT AUTO-RELOAD -->
     <script>document.write('<link rel="stylesheet" href="../css/stories.css?dev=' + Math.floor(Math.random() * 1000) + '"\>');</script>
-    <!-- <script>document.write('<script defer src="js/stories.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script> -->
+    <script>document.write('<script defer src="js/stories.js?dev=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
 
+    <!-- HIDE THIS PAGE -->
+    <script defer src="../js/hide.js"></script>
 </head>
 <body class='fade-in'>
     <a href="../stories"><img id="return" src="../images/return.png"></a>

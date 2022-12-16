@@ -1,1 +1,0 @@
-this directory's content is being hidden in `stories.css`
