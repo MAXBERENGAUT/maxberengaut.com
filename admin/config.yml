@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  repo: MAXBERENGAUT/maxberengaut.com
+  branch: main # Branch to update (optional; defaults to master)
+
+# These lines should *not* be indented
+# publish_mode: editorial_workflow
+
+media_folder: "/content" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/content" # The src attribute for uploaded media will begin with /images/uploads
+
+site_url: https://maxberengaut.com
+display_url: https://maxberengaut.com
+
+collections:
+  - name: "Photos" # Used in routes, e.g., /admin/collections/blog
+    extension: json
+    format: json
+    label: "Photography" # Used in the UI
+    folder: "content/photos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{title}}-{{fields.artist}}-{{month}}-{{day}}-{{year}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Title", required: false, name: "title", widget: "image"}
+      - {label: "Description", required: false, name: "desc", widget: "image"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Location", name: "year", widget: "string"}
