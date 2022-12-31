@@ -1,6 +1,3 @@
-[build]
-  publish = "public"
-
 [[redirects]]
   from = "/stories/*"
   to = "/"
