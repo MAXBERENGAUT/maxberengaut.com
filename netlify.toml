@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/*.html*"
+  to = "/{path}"
+  status = 301
+
+[[redirects]]
   from = "/stories/*"
   to = "/"
   status = 302
