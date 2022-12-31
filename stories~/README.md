@@ -1,1 +1,0 @@
-this directory's files are hidden by adding a `~` to the end of its filenames
