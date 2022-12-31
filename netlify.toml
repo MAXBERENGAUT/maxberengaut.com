@@ -1,5 +1,8 @@
+[build]
+  publish = "public"
+
 [[redirects]]
   from = "/stories/*"
   to = "/"
-  status = 404
+  status = 302
   force = true
