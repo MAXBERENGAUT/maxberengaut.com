@@ -11,6 +11,13 @@ public_folder: "/content" # The src attribute for uploaded media will begin with
 
 site_url: https://maxberengaut.com
 display_url: https://maxberengaut.com
+logo_url: https://maxberengaut.com/images/favicon.ico
+
+backend:
+  name: imagekit
+  api_key: YOUR_API_KEY
+  url_endpoint: YOUR_URL_ENDPOINT
+  folder: YOUR_FOLDER
 
 collections:
   - name: "Photos" # Used in routes, e.g., /admin/collections/blog
@@ -19,7 +26,8 @@ collections:
     label: "Photography" # Used in the UI
     folder: "content/photos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{image}}"
+    identifier_field: image
+    slug: "{{slug}}-{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Title", name: "title", widget: "string", required: false}
