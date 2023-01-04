@@ -11,12 +11,12 @@ public_folder: "/content" # The src attribute for uploaded media will begin with
 
 site_url: https://maxberengaut.com
 display_url: https://maxberengaut.com
-# logo_url: 
+# logo_url: # url to logo image to be displayed on admin site
 
 collections:
   - name: "Photos" # Used in routes, e.g., /admin/collections/blog
     editor:
-      preview: false
+      preview: false # removed preview due to bug with setting image as identifier
     extension: json
     format: json
     label: "Photography" # Used in the UI
