@@ -23,10 +23,9 @@ collections:
     folder: "content/photos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     identifier_field: image
-    slug: "{{slug}}-{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}"
     fields:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Title", name: "title", widget: "string", required: false}
-      - {label: "Description", name: "desc", widget: "text", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Date", name: "date", widget: "string", required: false}
-      - {label: "Location", name: "year", widget: "string", required: false}
+      - {label: "Location", name: "location", widget: "string", required: false}
