@@ -20,11 +20,9 @@ collections:
     label: "Photography" # Used in the UI
     folder: "content/photos" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    identifier_field: image
     slug: "{{title}}-{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}"
     fields: # The fields for each document, usually in front matter
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Image", name: "title", widget: "image"}
       - {label: "Description", name: "desc", widget: "text", required: false}
       - {label: "Date", name: "date", widget: "string", required: false}
       - {label: "Location", name: "year", widget: "string", required: false}
