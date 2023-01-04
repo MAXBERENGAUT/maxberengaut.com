@@ -23,8 +23,8 @@ collections:
     identifier_field: image
     slug: "{{slug}}-{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}"
     fields: # The fields for each document, usually in front matter
-      - {label: "Image", name: "image", widget: "url"}
+      - {label: "Image", name: "image", widget: "image"}
       - {label: "Title", name: "title", widget: "string", required: false}
-      - {label: "Description", name: "desc", widget: "string", required: false}
+      - {label: "Description", name: "desc", widget: "text", required: false}
       - {label: "Date", name: "date", widget: "string", required: false}
       - {label: "Location", name: "year", widget: "string", required: false}
