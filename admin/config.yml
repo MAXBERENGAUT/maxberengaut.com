@@ -13,12 +13,6 @@ site_url: https://maxberengaut.com
 display_url: https://maxberengaut.com
 logo_url: https://maxberengaut.com/images/favicon.ico
 
-backend:
-  name: imagekit
-  api_key: YOUR_API_KEY
-  url_endpoint: YOUR_URL_ENDPOINT
-  folder: YOUR_FOLDER
-
 collections:
   - name: "Photos" # Used in routes, e.g., /admin/collections/blog
     extension: json
