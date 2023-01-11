@@ -41,6 +41,12 @@
     left: 3em;
 }
 
+#playlists_trigger {
+    font-size: 24px;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
 #navigation > a {
     color: white;
     text-decoration: none;

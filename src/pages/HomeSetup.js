@@ -27,7 +27,6 @@ export function setup(){
   initMenu();
 
   function initMenu(){
-    console.log(items)
     for(let i = 0; i < items.length; i++) {
       menu_width += items.item(i).clientWidth
     }

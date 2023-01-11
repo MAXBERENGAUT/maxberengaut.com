@@ -35,9 +35,9 @@ function Playlists() {
   }
 
   return <div id={styles.playlists} onMouseLeave={() => setShow(false)}>
-    <a id={styles.playlists_trigger} onMouseOver={() => setShow(true)}>
+    <div id={styles.playlists_trigger} onMouseOver={() => setShow(true)}>
       ♫
-    </a>
+    </div>
     {show && <Fragment>
       <a href={links["spotify"]} style={{ color: "#1DB954" }}>
         Spotify (80%)

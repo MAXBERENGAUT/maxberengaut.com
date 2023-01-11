@@ -31,7 +31,7 @@ function Form() {
 
 function Movies() {
   return <main id={styles.main}>
-    <a href="./"><img id={styles.dog} src="./images/dog.png" /></a>
+    <a href="./"><img id={styles.dog} src="./images/dog.png" alt="dog"/></a>
 
     <h1 className={styles.title}>Three Crows in Charlottesville</h1>
     <p className={`${styles.summary} ${styles.reveal_on_hover}`}>
@@ -76,7 +76,7 @@ function Movies() {
     </p>
 
     <div className={styles.featured}>
-      <img src="./images/IMG_20220322_114008.jpg" />
+      <img src="./images/IMG_20220322_114008.jpg" alt="featured"/>
     </div>
     <div className={styles.reveal_on_hover}>Production: Saturday March 26, 2022</div>
     <div className={styles.reveal_on_hover}><br/>Reach out for the script or for help in the production:</div>
@@ -90,7 +90,7 @@ function Movies() {
       as their friends and family intersect and come in to play with one another.
     </p>
     <div className={styles.featured}>
-      <img src="./images/201015000036070025.jpg" />
+      <img src="./images/201015000036070025.jpg" alt="featured"/>
     </div>
     <div className={styles.reveal_on_hover}>Production: Unknown</div>
     <div className={styles.reveal_on_hover}><br/>Reach out for the script or for help in the production:</div>
