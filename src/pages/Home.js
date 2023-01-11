@@ -17,13 +17,12 @@ function Home() {
 
     // TODO: fix zooming text alignment (seems just a little off)
     // create zooming text
-    zoom.className = styles.item;
+    zoom.className = styles.item + " " + styles.zooming;
     zoom.style.position = "fixed";
     zoom.style.whiteSpace = "nowrap";
     zoom.style.left = (rect.left + rect.width / 2) + "px";
     zoom.style.top = "40%";
     zoom.style.transform = "translate(-50%, -50%)";
-    zoom.style.animation = `${styles.zoom} 3.5s forwards`;
     
     // hide items, fade background
     for (let x of e.target.parentNode.childNodes ) { 

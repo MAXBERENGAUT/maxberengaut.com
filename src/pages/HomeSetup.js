@@ -13,6 +13,7 @@ export function setup(){
 
   //
 
+  var home = document.getElementById(styles.home);
   var menu = document.getElementById(styles.menu);
   var items = document.getElementsByClassName(styles.item);
 
@@ -101,4 +102,41 @@ export function setup(){
   menu.addEventListener('mouseleave', () => {
     menu_hovered_over = false;
   });
+
+  // // for each item on click, transition and redirect
+  // for (let item of items){
+  //   if (item.classList.contains("unreleased")) continue;
+
+  //   // eslint-disable-next-line no-loop-func
+  //   item.addEventListener("click", e => {
+  //     // stop rotation
+  //     clearInterval(update_interval);
+
+  //     let zoom = e.target.cloneNode(true);
+  //     let rect = e.target.getBoundingClientRect();
+
+  //     e.target.style.opacity = 0;
+
+  //     // TODO: fix zooming text alignment (seems just a little off)
+  //     // create zooming text
+  //     zoom.className = "item";
+  //     zoom.style.position = "fixed";
+  //     zoom.style.whiteSpace = "nowrap";
+  //     zoom.style.left = (rect.left + rect.width / 2) + "px";
+  //     zoom.style.top = "40%";
+  //     zoom.style.transform = "translate(-50%, -50%)";
+  //     zoom.style.animation = `${styles.zoom} 3.5s forwards`;
+      
+  //     // hide items, fade background
+  //     for (let x of items){ x.style.animation = `${styles.fade_out} 2s forwards`; }
+  //     home.style.animation = `${styles.white_out} 3s forwards`;
+      
+  //     // redirect post-animation
+  //     zoom.addEventListener("animationend", () => {
+  //       window.location.href = zoom.getAttribute("href");
+  //     });
+
+  //     home.appendChild(zoom);
+  //   });
+  // }
 }

@@ -78,10 +78,14 @@
     animation: fade-in 2s forwards;
 }
 
+.zooming {
+    animation: zoom 3.5s forwards;
+}
+
 @keyframes zoom {
     to {
         transform: scale(200);
-        blackface-visibility: hidden;
+        /* blackface-visibility: hidden; */
     }
 }
 
