@@ -1,0 +1,174 @@
+@import 'MusicFonts.module.css';
+
+#main {
+    font-family: 'TiemposText', Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 0 calc(25vw + 8px);
+    display: block;
+    min-height: 100vh;
+    line-height: 2em;
+}
+
+#dog {
+    /* mix-blend-mode: multiply; */
+    position: fixed;
+    width: 2.25em;
+    height: 2.25em;
+    top: 3em;
+    left: 3em;
+    filter: invert(1);
+}
+
+#title {
+    padding-top: 1em;
+    font-family: 'TiemposHeadline', Helvetica, sans-serif;
+    margin: auto 0;
+    /* margin-bottom: 0; */
+    line-height: 0.75em;
+}
+
+.subtitle, .song {
+    font-family: 'Walfork', Helvetica, sans-serif;
+}
+
+
+#navigation {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 9em;
+    left: 3em;
+}
+
+#playlists_trigger {
+    font-size: 24px;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+#navigation > a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+#navigation > a:hover {
+    color: #999999
+}
+
+#marker {
+    visibility: hidden;
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#playlists {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    top: 9em;
+    right: 7em;
+}
+
+#playlists > a {
+    text-decoration: none;
+    font-size: 150%;
+    line-height: 1em;
+    margin-bottom: 1em;
+    /* border-style: dashed;
+    border-width: 1px;
+    border-color: white; */
+}
+
+#playlists > a:hover {
+    filter: brightness(150%);
+}
+
+#playlists > span {
+    line-height: 1em;
+    height: 0;
+}
+
+#playlists_trigger {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.spacer {
+    height: 15vh;
+}
+
+.divider {
+    border-bottom: 2px solid rgb(0, 0, 114);
+    width: 100px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* LIST ITEM STYLES*/
+
+.number {
+    font-family: 'Walfork', Helvetica, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.left {
+    float: left;
+    margin-right: 3vw;
+    margin-bottom: 1.7vw;
+    width: 17.5vw;
+}
+
+.right {
+    float: right;
+    margin-left: 3vw;
+    margin-bottom: 1.7vw;
+    width: 17.5vw;
+}
+
+.song {
+    line-height: 2em;
+}
+
+.lyric {
+    clear: both;
+    text-align: center;
+    width: 95vw;
+    margin-left: -22.5vw;
+    font-size: 200%;
+    line-height: 2em;
+}
+
+.hr {
+    clear: both;
+    background-color: rgb(0, 0, 114);
+    margin: 5vh 0;
+    border: none;
+    height: 2px;
+}
+
+
+/* END LIST ITEM STYLES */
+
+.fade-in {
+    -webkit-animation: fade-in 2s forwards;
+    -moz-animation: fade-in 2s forwards;
+    -o-animation: fade-in 2s forwards;
+    -ms-animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes          fade-in { from { opacity: 0; } to { opacity: 1; }}

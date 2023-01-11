@@ -1,10 +1,10 @@
 {
-  "title": -1,
-  "image": "example.com/image.png",
-  "song": "Test",
-  "artist": "Test",
-  "year": 1231,
-  "write_up": "T﻿EST",
-  "lyric": "T﻿EST",
-  "align": "left"
+  "cover": "https://ik.imagekit.io/maxberengautsites/maxberengaut_com/list_photos/1.jpg",
+  "title": "1",
+  "artist": "Kanye West",
+  "year": "2013",
+  "write_up": "At the end of the day, music is about pathos, and pop music is about sexy pathos. The dark, thudding bass lines, the annoying-ass record scratch, the slowly building synths, all of that is what makes the sad content of this song \u2018sexy\u2019. Everything thing else is pure human emotion, Bon Iver\u2019s part (\u201cI heard you need a new, phone!\u201d), Chief Keef\u2019s part (\u201cthese bitches can\u2019t handle me!\u201d), Kanye\u2019s unforgettable verse (\u201cOkay I smashed your corolla!\u201d), and of course, that Mike Dean guitar. Yeezus was Kanye\u2019s greatest album, his best representation of his organizational genius, and Hold My Liquor, as the perfect example of all those facts, was the decade\u2019s greatest song.",
+  "lyric": "Babygirl he's a loner, Babygirl he's a loner",
+  "song": "Hold My Liquor",
+  "align": "right"
 }

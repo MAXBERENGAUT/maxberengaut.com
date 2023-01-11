@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Walfork;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Walfork-Demi.woff") format("woff"); 
+}
+@font-face {
+  font-family: Walfork;
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/Walfork-DemiOblique.woff") format("woff"); 
+}
+@font-face {
+  font-family: Walfork;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Walfork-Regular.woff") format("woff"); 
+}
+@font-face {
+  font-family: Walfork;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/Walfork-RegularOblique.woff") format("woff"); 
+}
+@font-face {
+  font-family: TiemposHeadline;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/TiemposHeadline-Bold.woff2") format("woff2"), url("../fonts/TiemposHeadline-Bold.woff") format("woff"); 
+}
+@font-face {
+  font-family: TiemposHeadline;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/TiemposHeadline-BoldItalic.woff2") format("woff2"), url("../fonts/TiemposHeadline-BoldItalic.woff") format("woff"); 
+}
+@font-face {
+  font-family: TiemposText;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/TiemposText-Regular.woff2") format("woff2"), url("../fonts/TiemposText-Regular.woff") format("woff"); 
+}
+@font-face {
+  font-family: TiemposText;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/TiemposText-RegularItalic.woff2") format("woff2"), url("../fonts/TiemposText-RegularItalic.woff") format("woff");
+}

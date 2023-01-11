@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  repo: MAXBERENGAUT/maxberengaut.com
+  branch: react # Branch to update (optional; defaults to master)
+
+# These lines should *not* be indented
+# publish_mode: editorial_workflow
+
+media_folder: "public/images"
+public_folder: "/images"
+
+site_url: https://maxberengaut.com
+display_url: https://maxberengaut.com
+# logo_url: # url to logo image to be displayed on admin site
+
+collections:
+  - name: "Photos" # Used in routes, e.g., /admin/collections/blog
+    editor:
+      preview: false # removed preview due to bug with setting image as identifier
+    extension: json
+    format: json
+    label: "Photography" # Used in the UI
+    folder: "content/photos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    identifier_field: image
+    fields:
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Date", name: "date", widget: "string", required: false}
+      - {label: "Location", name: "location", widget: "string", required: false}
+  
+  - name: "Music" # Used in routes, e.g., /admin/collections/blog
+    extension: json
+    format: json
+    label: "Music Criticism" # Used in the UI
+    folder: "content/music" # The path to the folder where the documents are stored
+    create: false
+    delete: false
+    fields:
+      - {label: "Number", name: "title", widget: "number"}
+      - {label: "Cover", name: "cover", widget: "image"}
+      - {label: "Title", name: "song", widget: "string"}
+      - {label: "Artist", name: "artist", widget: "string"}
+      - {label: "Year", name: "year", widget: "number"}
+      - {label: "Write Up", name: "write_up", widget: "markdown"}
+      - {label: "Lyric", name: "lyric", widget: "markdown"}
+      - {label: "Cover Align", name: "align", widget: "select", options: ["left", "center", "right"]}
