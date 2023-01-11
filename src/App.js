@@ -3,8 +3,8 @@ import Home from './pages/Home'
 import Movies from './pages/Movies'
 import Music from './pages/Music'
 import Photos from './pages/Photos'
-import Stories from './pages/Stories'
-import Story from './pages/Story'
+// import Stories from './pages/Stories'
+// import Story from './pages/Story'
 
 function App() {
   return (
