@@ -44,5 +44,5 @@ collections:
       - {label: "Artist", name: "artist", widget: "string"}
       - {label: "Year", name: "year", widget: "number"}
       - {label: "Write Up", name: "write_up", widget: "markdown"}
-      - {label: "Lyric", name: "lyric", widget: "markdown"}
+      - {label: "Lyric", name: "lyric", widget: "markdown", required: false}
       - {label: "Cover Align", name: "align", widget: "select", options: ["left", "center", "right"]}
