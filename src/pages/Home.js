@@ -40,6 +40,7 @@ function Home() {
     });
 
     home.appendChild(zoom);
+    console.log(zoom);
   }
 
   const unreleased = `${styles.item} ${styles.unreleased}`
