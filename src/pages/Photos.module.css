@@ -1,0 +1,123 @@
+#main {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 60vw;
+    min-height: 100%;
+    font-family: 'Raleway', Verdana;
+    word-spacing: 0.25em;
+    line-height: 1.5em;
+    color: black;
+    background: white;
+    padding: 0 20vw;
+    display: block;
+    animation: fade-in 2s forwards;
+}
+
+#form {
+    display: flex;
+    height: 1.625em;
+    margin-top: 3.5em;
+    margin-bottom: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+#form > input {
+    font-family: inherit;
+    width: 70%;
+}
+
+#form > button {
+    font-family: inherit;
+    margin-left: 2%;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#form > button:hover, #form > span:hover {
+    border-width: 2px;
+    font-weight: bold;
+}
+
+#form > button:focus, #form > span:focus {
+    background-color: #f0f0f0;
+}
+
+#robot {
+    height: 3.65em;
+    padding: 0 0;
+    margin: 0 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#robot:hover {
+    cursor: pointer;
+}
+
+#metadata {
+    text-align: left;
+    line-height: 1.5em;
+    margin: 0.25em 0;
+}
+
+#location {
+    float: right;
+}
+
+.robot_container {
+    align-items: center;
+}
+
+#dog {
+    mix-blend-mode: multiply;
+    position: fixed;
+    width: 2.25em;
+    height: 2.25em;
+    top: 3em;
+    left: 3em;
+}
+
+.featured {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.67%;
+    overflow-y: hidden;
+}
+
+.featured > * {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.fade_in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.show {
+    opacity: 1;
+}
+
+.img_fade_in {
+    animation: img-fade-in 1.5s forwards;
+}
+
+.toggle {
+    animation: toggle 7s linear;
+}
+
+.toggle:hover {
+    cursor: default;
+}
+
+@keyframes          img-fade-in { from { opacity: 0; } to { opacity: 1; }}
+@keyframes          toggle { 0%,10%,100% { opacity: 1 } 15%,95% { opacity: 0 }}
