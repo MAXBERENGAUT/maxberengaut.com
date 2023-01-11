@@ -3,26 +3,60 @@ import styles from './Home.module.css';
 import { setup } from './HomeSetup';
 
 function Home() {
+  // FIXME: disgusting old JS hack
   useEffect(() => {
     setup();
   })
 
+  function onClick(e) {
+    e.preventDefault();
+    let zoom = e.target.cloneNode(true);
+    let rect = e.target.getBoundingClientRect();
+
+    e.target.style.opacity = 0;
+
+    // TODO: fix zooming text alignment (seems just a little off)
+    // create zooming text
+    zoom.className = styles.item;
+    zoom.style.position = "fixed";
+    zoom.style.whiteSpace = "nowrap";
+    zoom.style.left = (rect.left + rect.width / 2) + "px";
+    zoom.style.top = "40%";
+    zoom.style.transform = "translate(-50%, -50%)";
+    zoom.style.animation = `${styles.zoom} 3.5s forwards`;
+    
+    // hide items, fade background
+    for (let x of e.target.parentNode.childNodes ) { 
+      x.style.animation = `${styles.fade_out} 2s forwards`; 
+    }
+
+    let home = document.getElementById(styles.home);
+
+    home.style.animation = `${styles.white_out} 3s forwards`;
+    
+    // redirect post-animation
+    zoom.addEventListener("animationend", () => {
+      window.location.href = zoom.getAttribute("href");
+    });
+
+    home.appendChild(zoom);
+  }
+
   const unreleased = `${styles.item} ${styles.unreleased}`
 
-  // TODO: make these into <a> or <button> for accessibility
   return <main id={styles.home}>
     <div id={styles.menu}>
-      <div className={styles.item} href={"./movies"}>Movies</div>
-      <div className={styles.item} href={"./photos"}>Photography</div>
-      <div className={styles.item} href={"./music"}>Music Criticism</div>
-      <div className={unreleased}>Short Stories</div>
-      <div className={unreleased}>Radio Shows</div>
-      <div className={unreleased}>Screenplays</div>
-      <div className={unreleased}>Music Videos</div>
+      <a className={styles.item} href={"./movies"} onClick={onClick}>Movies</a>
+      <a className={styles.item} href={"./photos"} onClick={onClick}>Photography</a>
+      <a className={styles.item} href={"./music"} onClick={onClick}>Music Criticism</a>
+      <a className={unreleased} href={"/"} disabled>Short Stories</a>
+      <a className={unreleased} href={"/"}>Radio Shows</a>
+      <a className={unreleased} href={"/"}>Screenplays</a>
+      <a className={unreleased} href={"/"}>Music Videos</a>
     </div>
         
     <footer id={styles.footer}>
-      <div style={{ paddingBottom: "0.3em" }}>Created by</div>
+      <div>Created by</div>
       <div>Max Berengaut, Joshua Devine</div>
     </footer>
   </main>
