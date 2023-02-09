@@ -49,7 +49,7 @@ function Home() {
       <a className={styles.item} href={"./movies"} onClick={onClick}>Movies</a>
       <a className={styles.item} href={"./photos"} onClick={onClick}>Photography</a>
       <a className={styles.item} href={"./music"} onClick={onClick}>Music Criticism</a>
-      <a className={unreleased} href={"/"} disabled>Short Stories</a>
+      <a className={styles.item} href={"./stories"} onClick={onClick}>Short Stories</a>
       <a className={unreleased} href={"/"}>Radio Shows</a>
       <a className={unreleased} href={"/"}>Screenplays</a>
       <a className={unreleased} href={"/"}>Music Videos</a>

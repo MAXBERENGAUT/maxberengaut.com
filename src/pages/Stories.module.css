@@ -1,25 +1,21 @@
-* {
-  font-family: Georgia, Verdana;
+#main {
+  font-family: 'Raleway', Verdana;
+  word-spacing: 0.25em;
+  line-height: 1.5em;
   color: black;
-}
-
-body {
-  background-color: white;
-  padding: 0 5vw;
+  background: white;
+  padding: 0 20vw;
   display: block;
-}
-
-main {
-  padding: 0 15vw;
-  padding-top: 10em;
+  /* padding-top: 10em; this was previously on <main> */
+  animation: fade-in 2s forwards;
 }
 
 section:first-of-type::first-letter{
   font-size: 600%;
 }
 
-h1 {
-  font-family: 'Raleway', Verdana;
+.story > h1 {
+  /* font-family: 'Raleway', Verdana; */
   padding-top: 10px;
   font-size: 350%;
   line-height: 79px;
@@ -28,11 +24,15 @@ h1 {
   position: relative;
 }
 
-section {
+.story a {
+  color: black;
+}
+
+#main section {
   padding: 0.5em 0;
 }
 
-section::first-letter {
+#main section::first-letter {
   font-size: 400%;
 }
 
@@ -41,13 +41,13 @@ section::first-letter {
   padding-right: 2px;
 }
 
-p {
+#main p {
   text-indent: 1em;
   font-size: large;
   line-height: 200%;
 }
 
-a {
+#main a {
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a {
   writing-mode: vertical-lr;
 }
 
-.story-list {
+.story_list {
   position: relative;
 }
 
@@ -94,7 +94,7 @@ a {
   height: 110%;
   position: absolute;
   left: 37.5px;
-  top: -100px;
+  top: -95px;
 }
 
 #dog {
@@ -116,15 +116,7 @@ a {
 }
 
 .fade-in {
-  -webkit-animation: fade-in 2s forwards;
-  -moz-animation: fade-in 2s forwards;
-  -o-animation: fade-in 2s forwards;
-  -ms-animation: fade-in 2s forwards;
   animation: fade-in 2s forwards;
 }
 
-@-webkit-keyframes  fade-in { from { opacity: 0; } to { opacity: 1; }}
-@-moz-keyframes     fade-in { from { opacity: 0; } to { opacity: 1; }}
-@-o-keyframes       fade-in { from { opacity: 0; } to { opacity: 1; }}
-@-ms-keyframes      fade-in { from { opacity: 0; } to { opacity: 1; }}
 @keyframes          fade-in { from { opacity: 0; } to { opacity: 1; }}
